@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
- 
-=======
 /*****************************************
 ** File:    MerkleTree.java
 ** Project: CSCE 314 Project, Fall 2020
@@ -17,7 +14,6 @@
 **
 ***********************************************/
 
->>>>>>> Stashed changes
 public class MerkleTree extends BinaryTree{
 
 	private String file;
