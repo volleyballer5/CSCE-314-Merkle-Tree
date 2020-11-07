@@ -5,10 +5,10 @@ public abstract class BinaryTree {
 	
 	BinaryTree() {}
 
-	public BinaryNode getRoot(return root;) {}
+	public BinaryNode getRoot() {return root;}
 	public void setRoot(BinaryNode root) {this.root = root;}
 	
-	public abstract void build() {}
+	public abstract void build();
 	
 	public void display() {}
 	

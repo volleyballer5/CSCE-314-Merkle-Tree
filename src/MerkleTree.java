@@ -6,7 +6,7 @@ public class MerkleTree extends BinaryTree{
 	MerkleTree() {}
 	MerkleTree(String filename) {}
 	
-	public String getFile(return file;) {}
+	public String getFile() {return file;}
 	public void setFile(String file) {this.file = file;}
 
 	public void build() {}
