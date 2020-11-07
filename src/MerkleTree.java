@@ -1,4 +1,4 @@
-
+ 
 public class MerkleTree extends BinaryTree{
 
 	private String file;
