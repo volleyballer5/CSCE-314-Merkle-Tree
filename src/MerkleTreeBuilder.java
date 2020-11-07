@@ -78,9 +78,9 @@ public class MerkleTreeBuilder {
 	public int hashLine(Vector<String> line) {return -1;}
 	
 	//-------------------------------------------------------
-	// Name: getFile()
+	// Name: hashNode()
 	// PreCondition:  none
-	// PostCondition: returns current hashedRoot
+	// PostCondition: returns the hashed value of two nodes
 	//---------------------------------------------------------
 	public int hashNodes(BinaryNode leftNode, BinaryNode rightNode) {return -1;}
 
