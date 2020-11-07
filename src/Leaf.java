@@ -16,9 +16,9 @@
 
 import java.util.Vector;
 
-public class Leaf extends BinaryNode {
+public class Leaf<E> extends BinaryNode {
 	
-	private Vector<String> data;
+	private Vector<E> data;
 	// reminder to set left and right children to node
 	
 	//-------------------------------------------------------
@@ -26,7 +26,7 @@ public class Leaf extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: creates a Leaf with given data
 	//---------------------------------------------------------
-	Leaf(Vector<String> data)
+	Leaf(Vector<E> data)
 	{
 		this.data = data;
 	}
@@ -36,7 +36,7 @@ public class Leaf extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: returns data
 	//---------------------------------------------------------
-	public Vector<String> getData() {
+	public Vector<E> getData() {
 		return data;
 	}
 
@@ -45,7 +45,7 @@ public class Leaf extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: sets data to given argument
 	//---------------------------------------------------------
-	public void setData(Vector<String> data) {
+	public void setData(Vector<E> data) {
 		this.data = data;
 	}
 	
@@ -54,7 +54,7 @@ public class Leaf extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: adds datum to existing data
 	//---------------------------------------------------------
-	public void addData(String datum)
+	public void addData(E datum)
 	{
 		
 	}
@@ -64,7 +64,7 @@ public class Leaf extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: creates and returns of copy of Leaf
 	//---------------------------------------------------------
-	public Leaf duplicate()
+	public Leaf<E> duplicate()
 	{
 		return this;
 	}
@@ -74,7 +74,7 @@ public class Leaf extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: checks if two Leaf's are equal
 	//---------------------------------------------------------
-	public boolean equals(Leaf leaf)
+	public boolean equals(Leaf<E> leaf)
 	{
 		return false;
 	}
