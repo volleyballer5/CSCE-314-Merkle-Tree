@@ -61,7 +61,7 @@ public class Driver {
 		
 		System.out.println("L1==L2: " + l1.equals(l2));
 		
-		l1.addData("Mrosko");
+		//l1.addData("Mrosko");
 		
 		System.out.println("Leaf1: " + l1.toString());
 		System.out.println("Leaf2: " + l2.toString());
@@ -74,6 +74,21 @@ public class Driver {
 		
 		System.out.println("BinaryNode b: " + b);
 	}
+	
+	public static void testMerkleTree() {
+		MerkleTree testTree = new MerkleTree("testData.csv");
+		System.out.println("Empty Tree");
+		testTree.display();
+		System.out.println();
+		System.out.println("Build Stuff");
+		testTree.build();
+		System.out.println();
+		System.out.println("Root");
+		System.out.println(testTree.getRoot().getHashValue());
+		System.out.println();
+		System.out.println("New Tree");
+		testTree.display();
+	}
 
 	
 	
@@ -81,7 +96,9 @@ public class Driver {
 		
 		System.out.println("Test Run");
 		
-		testNodes();
+		//testNodes();
+		
+		testMerkleTree();
 		
 		// Check input params
 		// Create 2 empty merkle trees

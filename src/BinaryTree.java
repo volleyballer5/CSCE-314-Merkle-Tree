@@ -10,7 +10,7 @@
 ** 	superclass MerkleTree is constructed from. Contains the 
 ** 	variables and functions common to binary trees.
 **
-**
+**	Idea for printing tree came from https://www.geeksforgeeks.org/print-binary-tree-2-dimensions/
 ***********************************************/
 
 public abstract class BinaryTree {
@@ -48,13 +48,12 @@ public abstract class BinaryTree {
 	//-------------------------------------------------------
 	// Name: display()
 	// PreCondition:  tree is not empty
-	// PostCondition: neatly displays the binary tree in order
+	// PostCondition: neatly displays the binary tree with left most 
+	// node being the root and top right node being the last node in the tree
 	//---------------------------------------------------------
 	public void display() {
 		if(root != null) {
-			display(root.getLeft());
-			System.out.println(root.toString());
-			display(root.getLeft());
+			display(root, 0);
 		}
 	}
 	
@@ -63,12 +62,15 @@ public abstract class BinaryTree {
 	// PreCondition:  node exists
 	// PostCondition: neatly displays the node and children of node
 	//---------------------------------------------------------
-	public void display(BinaryNode node) {
+	public void display(BinaryNode node, int spaces) {
 		if(node != null) {
-			display(node.getLeft());
-			System.out.println(node.toString());
-			display(node.getRight());
+			if(!(node instanceof Leaf)) {
+				spaces += 10;
+				display(node.getRight(), spaces);
+				System.out.println(String.format("%"+spaces+"s", "") + node);
+				display(node.getLeft(), spaces);
+			}
 		}
 	}
-	
+
 }

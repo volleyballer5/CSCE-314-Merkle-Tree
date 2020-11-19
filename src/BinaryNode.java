@@ -122,7 +122,8 @@ public class BinaryNode {
 	//---------------------------------------------------------
 	public String toString()
 	{
-		return "Hash: " + hashValue + "\n" + "Left Child: " + left.toString() + "\n" + "Right Child: " + right.toString();
+		return "Hash: " + hashValue;
+		//return "Hash: " + hashValue + "\n" + "Left Child: " + left.toString() + "\n" + "Right Child: " + right.toString();
 	}
 	
 	//-------------------------------------------------------
