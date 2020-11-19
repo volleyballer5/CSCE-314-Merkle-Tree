@@ -15,60 +15,48 @@
 ***********************************************/
 
 import java.util.*;
+import java.io.*;
+import java.lang.Math;
 
 public class MerkleTreeBuilder {
 
-	private int hashedRoot;
-	private Vector<Integer> hashedLines;
-	
-	//-------------------------------------------------------
-	// Name: MerkeTreeBuilder()
-	// PreCondition:  none
-	// PostCondition: creates default MerkleTreeBuilder
-	//---------------------------------------------------------
-	MerkleTreeBuilder() {}
+	private Vector<BinaryNode> hashedLines;
+	private String file;
 	
 	//-------------------------------------------------------
 	// Name: MerkeTreeBuilder()
 	// PreCondition:  none
 	// PostCondition: creates MerkleTreeBuilder associated with filename
 	//---------------------------------------------------------
-	MerkleTreeBuilder(String filename) {}
-	
-	//-------------------------------------------------------
-	// Name: getHashedRoot()
-	// PreCondition:  none
-	// PostCondition: returns current hashedRoot
-	//---------------------------------------------------------
-	public int getHashedRoot() {return hashedRoot;}
-	
-	//-------------------------------------------------------
-	// Name: setHashedRoot()
-	// PreCondition:  none
-	// PostCondition: updates current hashedRoot to passed value
-	//---------------------------------------------------------
-	public void setHashedRoot(int hashedRoot) {this.hashedRoot = hashedRoot;}
+	MerkleTreeBuilder(String filename) {file = filename;}
 	
 	//-------------------------------------------------------
 	// Name: getHashedLines()
 	// PreCondition:  none
 	// PostCondition: returns the vector of hashedLines
 	//---------------------------------------------------------
-	public Vector<Integer> getHashedLines() {return hashedLines;};
+	public Vector<BinaryNode> getHashedLines() {return hashedLines;};
 	
 	//-------------------------------------------------------
 	// Name: addHashedLine()
 	// PreCondition:  none
-	// PostCondition: adds line to end of hashedLines vector
+	// PostCondition: adds passed argument to end of hashedLines vector
 	//---------------------------------------------------------
-	public void addHasedLine(int line) {}
+	public void addHasedLine(BinaryNode line) {hashedLines.add(line);}
 	
 	//-------------------------------------------------------
-	// Name: parseLine()
+	// Name: getFile()
 	// PreCondition:  none
-	// PostCondition: returns vector where each index is a csv
+	// PostCondition: returns the name of the file
 	//---------------------------------------------------------
-	public Vector<String> parseLine(String line) {return null;}
+	public String getFile() {return file;};
+	
+	//-------------------------------------------------------
+	// Name: setFile()
+	// PreCondition:  none
+	// PostCondition: sets file to given argument
+	//---------------------------------------------------------
+	public void setFile(String file) {this.file = file;}
 	
 	//-------------------------------------------------------
 	// Name: hashLine()
@@ -76,12 +64,71 @@ public class MerkleTreeBuilder {
 	// PostCondition: returns the hashed value of the line
 	//---------------------------------------------------------
 	public int hashLine(Vector<String> line) {return -1;}
+	// update function with hash function
+	
+	//-------------------------------------------------------
+	// Name: hashLeaf()
+	// PreCondition:  none
+	// PostCondition: returns the hashed node of the leaf
+	//---------------------------------------------------------
+	public BinaryNode hashLeaf(Leaf<String> leaf) {
+		return new BinaryNode(hashLine(leaf.getData()), leaf, null);
+	}
 	
 	//-------------------------------------------------------
 	// Name: hashNode()
 	// PreCondition:  none
-	// PostCondition: returns the hashed value of two nodes
+	// PostCondition: returns the hashed node of two nodes
 	//---------------------------------------------------------
-	public int hashNodes(BinaryNode leftNode, BinaryNode rightNode) {return -1;}
+	public BinaryNode hashNodes(BinaryNode leftNode, BinaryNode rightNode) {
+		// update with hash function
+		int hashVal = leftNode.getHashValue() + rightNode.getHashValue(); 
+		return new BinaryNode(hashVal, null, null);
+	}
+	
+	public BinaryNode build() {
+		BufferedReader reader = null;
+        String line = "";
+        Vector<String> splitLine = null;
+        
+        try {
+        	reader = new BufferedReader(new FileReader(file));
+            
+            while((line = reader.readLine()) != null) {
+            	// splits line by commas and adds to vector
+            	splitLine = new Vector<String>();
+            	splitLine.addAll(Arrays.asList(line.split(",")));
+            	
+            	// adds binaryNode containing hash info for leaf and subsequent data to hasedLines vector
+            	hashedLines.add(hashLeaf(new Leaf<String>(splitLine)));
+            }
+            
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        
+        int neededDuplication = (int) Math.floor(Math.sqrt(hashedLines.size() - 1)) - hashedLines.size();
+        BinaryNode duplicate = hashedLines.lastElement();
+        
+        for(int i = 0; i < neededDuplication; i++) {
+        	hashedLines.add(new BinaryNode(duplicate.getHashValue(), new Leaf<String>(splitLine), null))
+        }
+        
+        Vector<BinaryNode> temp = new Vector<BinaryNode>();
+
+		// Recursively hash vector together including those needing duplication
+        
+		return null;
+	}
 
 }

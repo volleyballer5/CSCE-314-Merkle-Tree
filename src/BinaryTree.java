@@ -15,7 +15,7 @@
 
 public abstract class BinaryTree {
 	
-	private BinaryNode root;
+	protected BinaryNode root;
 	
 	//-------------------------------------------------------
 	// Name: BinaryTree()
@@ -46,10 +46,29 @@ public abstract class BinaryTree {
 	public abstract void build();
 	
 	//-------------------------------------------------------
-	// Name: getRoot()
+	// Name: display()
 	// PreCondition:  tree is not empty
-	// PostCondition: neatly displays the binary tree
+	// PostCondition: neatly displays the binary tree in order
 	//---------------------------------------------------------
-	public void display() {}
+	public void display() {
+		if(root != null) {
+			display(root.getLeft());
+			System.out.println(root.toString());
+			display(root.getLeft());
+		}
+	}
+	
+	//-------------------------------------------------------
+	// Name: display(BinaryNode node)
+	// PreCondition:  node exists
+	// PostCondition: neatly displays the node and children of node
+	//---------------------------------------------------------
+	public void display(BinaryNode node) {
+		if(node != null) {
+			display(node.getLeft());
+			System.out.println(node.toString());
+			display(node.getRight());
+		}
+	}
 	
 }

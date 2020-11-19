@@ -23,14 +23,20 @@ public class MerkleTree extends BinaryTree{
 	// PreCondition:  none
 	// PostCondition: Creates empty MerkleTree
 	//---------------------------------------------------------
-	MerkleTree() {}
+	MerkleTree() {
+		file = null;
+		root = null;
+	}
 	
 	//-------------------------------------------------------
 	// Name: MerkeTree(String filename)
 	// PreCondition:  filename exists
 	// PostCondition: Creates empty MerkleTree associated with filename
 	//---------------------------------------------------------
-	MerkleTree(String filename) {}
+	MerkleTree(String filename) {
+		file = filename;
+		root = null;
+	}
 	
 	//-------------------------------------------------------
 	// Name: getFile()
@@ -51,7 +57,10 @@ public class MerkleTree extends BinaryTree{
 	// PreCondition:  none
 	// PostCondition: Merkle Tree constructed from file
 	//---------------------------------------------------------
-	public void build() {}
+	public void build() {
+		MerkleTreeBuilder builder = new MerkleTreeBuilder(file);
+		setRoot(builder.build());
+	}
 	
 	//-------------------------------------------------------
 	// Name: validate(MerkleTree recent)
@@ -59,5 +68,29 @@ public class MerkleTree extends BinaryTree{
 	// PostCondition: returns whether two Merkle Trees match
 	//---------------------------------------------------------
 	public boolean validate(MerkleTree recent) {return true;}
-
+	
+	//-------------------------------------------------------
+	// Name: depth()
+	// PreCondition:  tree is not empty
+	// PostCondition: returns the depth of the tree
+	//---------------------------------------------------------
+	public int depth() {
+		if(root != null) {
+			return 1 + depth(root.getRight());
+		}
+		return 0;
+	}
+	
+	//-------------------------------------------------------
+	// Name: depth(BinaryNode node)
+	// PreCondition:  node exists
+	// PostCondition: returns the depth of the passed node
+	//---------------------------------------------------------
+	public int depth(BinaryNode node) {
+		if(node != null) {
+			return 1 + depth(node.getRight());
+		}
+		return 0;
+	}
+	
 }
