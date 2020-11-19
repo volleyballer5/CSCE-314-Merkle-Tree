@@ -72,6 +72,7 @@ public class MerkleTreeBuilder {
 	// PostCondition: returns the hashed node of the leaf
 	//---------------------------------------------------------
 	public BinaryNode hashLeaf(Leaf<String> leaf) {
+		// creates new binary node from hash of Leaf
 		return new BinaryNode(hashLine(leaf.getData()), leaf, null);
 	}
 	
@@ -82,6 +83,7 @@ public class MerkleTreeBuilder {
 	//---------------------------------------------------------
 	public BinaryNode hashNodes(BinaryNode leftNode, BinaryNode rightNode) {
 		// update with hash function
+		// hashed the two children then creates new node with that hashValue and children
 		int hashVal = leftNode.getHashValue() + rightNode.getHashValue(); 
 		return new BinaryNode(hashVal, leftNode, rightNode);
 	}
@@ -138,19 +140,22 @@ public class MerkleTreeBuilder {
         	hashedLines.add(new BinaryNode(duplicate.getHashValue(), new Leaf<String>(splitLine), null));
         }
         
-        System.out.println("After duplication: " + hashedLines);
-        
-        // WORKS UP TO THIS POINT
+        // return the final root hashed node
         return hashNodes(hashHalf(hashedLines.subList(0, hashedLines.size() / 2)), hashHalf(hashedLines.subList(hashedLines.size() / 2, hashedLines.size())));
-        //return null;
 	}
 	
+	//-------------------------------------------------------
+	// Name: hashHalf()
+	// PreCondition:  half contains 2^n elements
+	// PostCondition: returns the hash of the List half
+	//---------------------------------------------------------
 	private BinaryNode hashHalf(List<BinaryNode> half) {
-		System.out.println("Half: " + half + ", size: " + half.size());
 		if(half != null) {
+			// base case is 2 elements in List - returns a hash of the two nodes
 			if(half.size() == 2) {
 				return hashNodes(half.get(0), half.get(1));
 			}
+			// recursion - calls hashHalf on each half of the list and hashes result
 			else {
 				return hashNodes(hashHalf(half.subList(0, half.size() / 2)), hashHalf(half.subList(half.size() / 2, half.size())));
 			}
