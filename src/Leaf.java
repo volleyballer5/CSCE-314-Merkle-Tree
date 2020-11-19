@@ -28,7 +28,7 @@ public class Leaf<E> extends BinaryNode {
 	//---------------------------------------------------------
 	Leaf(Vector<E> data)
 	{
-		// TODO: set hash value
+		// TODO: set hash value by using function in binarynode
 		super();
 		this.data = data;
 	}
@@ -50,23 +50,6 @@ public class Leaf<E> extends BinaryNode {
 	// shouldnt need for our project application
 	public void setData(Vector<E> data) {this.data = data;}
 	
-	//-------------------------------------------------------
-	// Name: addData(String datum)
-	// PreCondition:  none
-	// PostCondition: adds datum to existing data
-	//---------------------------------------------------------
-	// TODO: should this update the hashvalue??
-	public void addData(E datum) {data.add(datum);}
-	
-	//-------------------------------------------------------
-	// Name: duplicate()
-	// PreCondition:  none
-	// PostCondition: creates and returns of copy of Leaf
-	//---------------------------------------------------------
-//	public Leaf<E> duplicate()
-//	{
-//		return this;
-//	}
 
 	//-------------------------------------------------------
 	// Name: equals(Leaf leaf)
