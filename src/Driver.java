@@ -83,6 +83,13 @@ public class Driver {
 		
 		testNodes();
 		
+		// Check input params
+		// Create 2 empty merkle trees
+		// MerkleTreeBuilder(inputFileUpdated and empty merkle tree?)
+		// MerkleTreeBuilder(inputFileChecking and empty merkle tree?)
+		// Validate
+		
+		
 		
 	}
 

@@ -27,7 +27,8 @@ public class Validator {
 	//---------------------------------------------------------
 	Validator()
 	{
-		
+		this.machine = null;
+		this.upToDate = null;
 	}
 	
 	//-------------------------------------------------------
@@ -47,36 +48,28 @@ public class Validator {
 	// PreCondition:  none
 	// PostCondition: returns the Merkle Tree in the machine
 	//---------------------------------------------------------
-	public MerkleTree getMachine() {
-		return machine;
-	}
+	public MerkleTree getMachine() {return machine;}
 
 	//-------------------------------------------------------
 	// Name: setMachine(MerkleTree machine)
 	// PreCondition:  none
 	// PostCondition: set the machine's Merkle Tree to the passed argument
 	//---------------------------------------------------------
-	public void setMachine(MerkleTree machine) {
-		this.machine = machine;
-	}
+	public void setMachine(MerkleTree machine) {this.machine = machine;}
 
 	//-------------------------------------------------------
 	// Name: getUpToDate()
 	// PreCondition:  none
 	// PostCondition: returns the Merkle Tree that is up to date
 	//---------------------------------------------------------
-	public MerkleTree getUpToDate() {
-		return upToDate;
-	}
+	public MerkleTree getUpToDate() {return upToDate;}
 
 	//-------------------------------------------------------
 	// Name: setUpToDate(MerkleTree upToDate)
 	// PreCondition:  none
 	// PostCondition: set the up to date Merkle Tree to the passed argument
 	//---------------------------------------------------------
-	public void setUpToDate(MerkleTree upToDate) {
-		this.upToDate = upToDate;
-	}
+	public void setUpToDate(MerkleTree upToDate) {this.upToDate = upToDate;}
 
 	//-------------------------------------------------------
 	// Name: checkPath()
@@ -95,6 +88,11 @@ public class Validator {
 	//---------------------------------------------------------
 	public Vector<String> updateMachine() 
 	{
+		// first check root node
+		// check left and right child
+		// pursue child that does not match until reach mismatch leaf
+		// update bad leaf and document change
+		// update hashes all the way back up the tree
 		return null;
 	}
 
