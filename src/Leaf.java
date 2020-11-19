@@ -28,6 +28,8 @@ public class Leaf<E> extends BinaryNode {
 	//---------------------------------------------------------
 	Leaf(Vector<E> data)
 	{
+		// TODO: set hash value
+		super();
 		this.data = data;
 	}
 
@@ -36,47 +38,53 @@ public class Leaf<E> extends BinaryNode {
 	// PreCondition:  none
 	// PostCondition: returns data
 	//---------------------------------------------------------
-	public Vector<E> getData() {
-		return data;
-	}
+	public Vector<E> getData() {return data;}
 
 	//-------------------------------------------------------
 	// Name: setData(Vector<String> data)
 	// PreCondition:  none
 	// PostCondition: sets data to given argument
 	//---------------------------------------------------------
-	public void setData(Vector<E> data) {
-		this.data = data;
-	}
+	// TODO: should this update the hashvalue??
+	// this should be a thing, but very complication since it has to reflect up (ptr to parent)
+	// shouldnt need for our project application
+	public void setData(Vector<E> data) {this.data = data;}
 	
 	//-------------------------------------------------------
 	// Name: addData(String datum)
 	// PreCondition:  none
 	// PostCondition: adds datum to existing data
 	//---------------------------------------------------------
-	public void addData(E datum)
-	{
-		
-	}
+	// TODO: should this update the hashvalue??
+	public void addData(E datum) {data.add(datum);}
 	
 	//-------------------------------------------------------
 	// Name: duplicate()
 	// PreCondition:  none
 	// PostCondition: creates and returns of copy of Leaf
 	//---------------------------------------------------------
-	public Leaf<E> duplicate()
-	{
-		return this;
-	}
+//	public Leaf<E> duplicate()
+//	{
+//		return this;
+//	}
 
 	//-------------------------------------------------------
 	// Name: equals(Leaf leaf)
 	// PreCondition:  none
 	// PostCondition: checks if two Leaf's are equal
 	//---------------------------------------------------------
-	public boolean equals(Leaf<E> leaf)
+	public boolean equals(Leaf<E> that)
 	{
-		return false;
+		if(this.hashValue != that.getHashValue())
+			return false;
+		else if(this.left != that.getLeft())
+			return false;
+		else if(this.right != that.getRight())
+			return false;
+		else if(! this.data.equals(that.getData()))
+			return false;
+		else
+			return true;
 	}
 	
 	//-------------------------------------------------------
@@ -86,7 +94,7 @@ public class Leaf<E> extends BinaryNode {
 	//---------------------------------------------------------
 	public String toString()
 	{
-		return "implement me";
+		return data.toString() + ", " + "Hash: " + hashValue;
 	}
 	
 }

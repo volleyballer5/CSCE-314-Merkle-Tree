@@ -1,3 +1,5 @@
+import java.util.Vector;
+
 /*****************************************
 ** File:    Driver.java
 ** Project: CSCE 314 Project, Fall 2020
@@ -34,11 +36,54 @@
 ***********************************************/
 
 public class Driver {
+	
+	public static void testNodes()
+	{
+		Vector<String> v1 = new Vector<>();
+		v1.add("Kyle");
+		v1.add("Mrosko");
+		Vector<String> v2 = new Vector<>();
+		v2.add("Melanie");
+		v2.add("Peavy");
+		Vector<String> v3 = new Vector<>();
+		v3.add("Kyle");
+		
+		Leaf<String> l1 = new Leaf<>(v1);
+		Leaf<String> l2 = new Leaf<>(v1);
+		
+		System.out.println("Leaf1: " + l1.toString());
+		System.out.println("Leaf2: " + l2.toString());
+		
+		l1.setData(v3);
+		
+		System.out.println("Leaf1: " + l1.toString());
+		System.out.println("Leaf2: " + l2.toString());
+		
+		System.out.println("L1==L2: " + l1.equals(l2));
+		
+		l1.addData("Mrosko");
+		
+		System.out.println("Leaf1: " + l1.toString());
+		System.out.println("Leaf2: " + l2.toString());
+		
+		System.out.println("L1==L2: " + l1.equals(l2));
+		
+		BinaryNode b = new BinaryNode();
+		b.setLeft(l1);
+		b.setRight(l2);
+		
+		System.out.println("BinaryNode b: " + b);
+	}
 
+	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Test Run");
-
+		
+		testNodes();
+		
+		
 	}
 
 }

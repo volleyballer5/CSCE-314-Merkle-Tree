@@ -16,9 +16,9 @@
 
 public class BinaryNode {
 	
-	private int hashValue;
-	private BinaryNode left;
-	private BinaryNode right;
+	protected int hashValue;
+	protected BinaryNode left;
+	protected BinaryNode right;
 	
 	//-------------------------------------------------------
 	// Name: BinaryNode()
@@ -27,7 +27,9 @@ public class BinaryNode {
 	//---------------------------------------------------------
 	BinaryNode()
 	{
-		
+		this.hashValue = 0;
+		this.left = null;
+		this.right = null;
 	}
 	
 	//-------------------------------------------------------
@@ -38,6 +40,8 @@ public class BinaryNode {
 	BinaryNode(int hash)
 	{
 		this.hashValue = hash;
+		this.left = null;
+		this.right = null;
 	}
 	
 	//-------------------------------------------------------
@@ -57,63 +61,58 @@ public class BinaryNode {
 	// PreCondition:  none
 	// PostCondition: returns the current hashValue
 	//---------------------------------------------------------
-	public int getHashValue() {
-		return hashValue;
-	}
+	public int getHashValue() {return hashValue;}
 
 	//-------------------------------------------------------
 	// Name: setHashValue(int hashValue)
 	// PreCondition:  none
 	// PostCondition: sets hashValue to the passed argument
 	//---------------------------------------------------------
-	public void setHashValue(int hashValue) {
-		this.hashValue = hashValue;
-	}
+	public void setHashValue(int hashValue) {this.hashValue = hashValue;}
 
 	//-------------------------------------------------------
 	// Name: getLeft()
 	// PreCondition:  none
 	// PostCondition: returns the left child
 	//---------------------------------------------------------
-	public BinaryNode getLeft() {
-		return left;
-	}
+	public BinaryNode getLeft() {return left;}
 
 	//-------------------------------------------------------
 	// Name: setLeft(BinaryNode left)
 	// PreCondition:  none
 	// PostCondition: sets the left child to a passed BinaryNode
 	//---------------------------------------------------------
-	public void setLeft(BinaryNode left) {
-		this.left = left;
-	}
+	public void setLeft(BinaryNode left) {this.left = left;}
 
 	//-------------------------------------------------------
 	// Name: getRight()
 	// PreCondition:  none
 	// PostCondition: returns the right child
 	//---------------------------------------------------------
-	public BinaryNode getRight() {
-		return right;
-	}
+	public BinaryNode getRight() {return right;}
 
 	//-------------------------------------------------------
 	// Name: setRight(BinaryNode right)
 	// PreCondition:  none
 	// PostCondition: sets the right child to a passed BinaryNode
 	//---------------------------------------------------------
-	public void setRight(BinaryNode right) {
-		this.right = right;
-	}
+	public void setRight(BinaryNode right) {this.right = right;}
 
 	//-------------------------------------------------------
 	// Name: equals(BinaryNode node)
 	// PreCondition:  none
 	// PostCondition: determines if two BinaryNode's are equal
 	//---------------------------------------------------------
-	public boolean equals(BinaryNode node)
+	public boolean equals(BinaryNode that)
 	{
-		return false;
+		if(this.hashValue != that.getHashValue())
+			return false;
+		else if(this.left != that.getLeft())
+			return false;
+		else if(this.right != that.getRight())
+			return false;
+		else
+			return true;
 	}
 	
 	//-------------------------------------------------------
@@ -123,7 +122,7 @@ public class BinaryNode {
 	//---------------------------------------------------------
 	public String toString()
 	{
-		return "implement me";
+		return "Hash: " + hashValue + "\n" + "Left Child: " + left.toString() + "\n" + "Right Child: " + right.toString();
 	}
 	
 	//-------------------------------------------------------
@@ -133,6 +132,7 @@ public class BinaryNode {
 	//---------------------------------------------------------
 	public int depth()
 	{
+		// TODO: implement (in merkle tree/somehwere other than here?)
 		return -1;
 	}
 }
