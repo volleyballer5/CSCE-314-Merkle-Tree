@@ -1,3 +1,7 @@
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 /*****************************************
 ** File:    BinaryNode.java
 ** Project: CSCE 314 Project, Fall 2020
@@ -16,7 +20,7 @@
 
 public class BinaryNode {
 	
-	protected int hashValue;
+	protected String hashValue;
 	protected BinaryNode left;
 	protected BinaryNode right;
 	
@@ -27,7 +31,7 @@ public class BinaryNode {
 	//---------------------------------------------------------
 	BinaryNode()
 	{
-		this.hashValue = 0;
+		this.hashValue = "";
 		this.left = null;
 		this.right = null;
 	}
@@ -37,23 +41,23 @@ public class BinaryNode {
 	// PreCondition:  none
 	// PostCondition: creates BinaryNode with given hash value
 	//---------------------------------------------------------
-	BinaryNode(int hash)
-	{
-		this.hashValue = hash;
-		this.left = null;
-		this.right = null;
-	}
+//	BinaryNode(String hash)
+//	{
+//		this.hashValue = hash;
+//		this.left = null;
+//		this.right = null;
+//	}
 	
 	//-------------------------------------------------------
 	// Name: BinaryNode(int hash, BinaryNode left, BinaryNode right)
 	// PreCondition:  none
 	// PostCondition: creates BinaryNode with hash value and predefined children
 	//---------------------------------------------------------
-	BinaryNode(int hash, BinaryNode left, BinaryNode right)
+	BinaryNode(BinaryNode left, BinaryNode right)
 	{
-		this.hashValue = hash;
 		this.left = left;
 		this.right = right;
+		this.hashValue = createHashFromChildren();
 	}
 
 	//-------------------------------------------------------
@@ -61,14 +65,14 @@ public class BinaryNode {
 	// PreCondition:  none
 	// PostCondition: returns the current hashValue
 	//---------------------------------------------------------
-	public int getHashValue() {return hashValue;}
+	public String getHashValue() {return hashValue;}
 
 	//-------------------------------------------------------
 	// Name: setHashValue(int hashValue)
 	// PreCondition:  none
 	// PostCondition: sets hashValue to the passed argument
 	//---------------------------------------------------------
-	public void setHashValue(int hashValue) {this.hashValue = hashValue;}
+	public void setHashValue(String hashValue) {this.hashValue = hashValue;}
 
 	//-------------------------------------------------------
 	// Name: getLeft()
@@ -82,7 +86,11 @@ public class BinaryNode {
 	// PreCondition:  none
 	// PostCondition: sets the left child to a passed BinaryNode
 	//---------------------------------------------------------
-	public void setLeft(BinaryNode left) {this.left = left;}
+	public void setLeft(BinaryNode left)
+	{
+		this.left = left;
+		this.hashValue = createHashFromChildren();
+	}
 
 	//-------------------------------------------------------
 	// Name: getRight()
@@ -96,7 +104,11 @@ public class BinaryNode {
 	// PreCondition:  none
 	// PostCondition: sets the right child to a passed BinaryNode
 	//---------------------------------------------------------
-	public void setRight(BinaryNode right) {this.right = right;}
+	public void setRight(BinaryNode right)
+	{
+		this.right = right;
+		this.hashValue = createHashFromChildren();
+	}
 
 	//-------------------------------------------------------
 	// Name: equals(BinaryNode node)
@@ -105,7 +117,7 @@ public class BinaryNode {
 	//---------------------------------------------------------
 	public boolean equals(BinaryNode that)
 	{
-		if(this.hashValue != that.getHashValue())
+		if(! this.hashValue.equals(that.getHashValue()))
 			return false;
 		else if(this.left != that.getLeft())
 			return false;
@@ -126,14 +138,35 @@ public class BinaryNode {
 		//return "Hash: " + hashValue + "\n" + "Left Child: " + left.toString() + "\n" + "Right Child: " + right.toString();
 	}
 	
-	//-------------------------------------------------------
-	// Name: depth()
-	// PreCondition:  none
-	// PostCondition: returns the depth of the BinaryNode
-	//---------------------------------------------------------
-	public int depth()
+	
+	
+	private String createHashFromChildren()
 	{
-		// TODO: implement (in merkle tree/somehwere other than here?)
-		return -1;
+		String lHash = left.getHashValue();
+		String rHash = right.getHashValue();
+		String combinedHash = lHash + rHash;
+		
+		try {
+			MessageDigest digest = MessageDigest.getInstance("SHA-256");
+			byte[] encodedhash = digest.digest(
+					combinedHash.getBytes(StandardCharsets.UTF_8));
+			return bytesToHex(encodedhash);
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+		return "";
+		
+	}
+	
+	protected String bytesToHex(byte[] hash) {
+	    StringBuilder hexString = new StringBuilder(2 * hash.length);
+	    for (int i = 0; i < hash.length; i++) {
+	        String hex = Integer.toHexString(0xff & hash[i]);
+	        if(hex.length() == 1) {
+	            hexString.append('0');
+	        }
+	        hexString.append(hex);
+	    }
+	    return hexString.toString();
 	}
 }

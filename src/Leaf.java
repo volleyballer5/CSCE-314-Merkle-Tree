@@ -14,6 +14,9 @@
 **
 ***********************************************/
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Vector;
 
 public class Leaf<E> extends BinaryNode {
@@ -28,9 +31,9 @@ public class Leaf<E> extends BinaryNode {
 	//---------------------------------------------------------
 	Leaf(Vector<E> data)
 	{
-		// TODO: set hash value by using function in binarynode
 		super();
 		this.data = data;
+		this.hashValue = hashData(data);
 	}
 
 	//-------------------------------------------------------
@@ -48,7 +51,11 @@ public class Leaf<E> extends BinaryNode {
 	// TODO: should this update the hashvalue??
 	// this should be a thing, but very complication since it has to reflect up (ptr to parent)
 	// shouldnt need for our project application
-	public void setData(Vector<E> data) {this.data = data;}
+	public void setData(Vector<E> data)
+	{
+		this.data = data;
+		this.hashValue = hashData(data);
+	}
 	
 
 	//-------------------------------------------------------
@@ -58,14 +65,22 @@ public class Leaf<E> extends BinaryNode {
 	//---------------------------------------------------------
 	public boolean equals(Leaf<E> that)
 	{
-		if(this.hashValue != that.getHashValue())
-			return false;
+		if(! this.hashValue.equals(that.getHashValue()))
+			{
+				return false;
+			}
 		else if(this.left != that.getLeft())
-			return false;
+			{
+				return false;
+			}
 		else if(this.right != that.getRight())
-			return false;
+			{
+				return false;
+			}
 		else if(! this.data.equals(that.getData()))
-			return false;
+			{
+				return false;
+			}
 		else
 			return true;
 	}
@@ -78,6 +93,21 @@ public class Leaf<E> extends BinaryNode {
 	public String toString()
 	{
 		return data.toString() + ", " + "Hash: " + hashValue;
+	}
+	
+	
+	private String hashData(Vector<E> input)
+	{
+		try {
+			String originalString = input.toString();
+			MessageDigest digest = MessageDigest.getInstance("SHA-256");
+			byte[] encodedhash = digest.digest(
+					originalString.getBytes(StandardCharsets.UTF_8));
+			return bytesToHex(encodedhash);
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+		return "";
 	}
 	
 }

@@ -1,3 +1,6 @@
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Vector;
 
 /*****************************************
@@ -49,11 +52,12 @@ public class Driver {
 		v3.add("Kyle");
 		
 		Leaf<String> l1 = new Leaf<>(v1);
-		Leaf<String> l2 = new Leaf<>(v1);
+		Leaf<String> l2 = new Leaf<>(v2);
 		
 		System.out.println("Leaf1: " + l1.toString());
 		System.out.println("Leaf2: " + l2.toString());
 		
+		System.out.println("\nSet leaf1 to \"Kyle\"");
 		l1.setData(v3);
 		
 		System.out.println("Leaf1: " + l1.toString());
@@ -61,18 +65,20 @@ public class Driver {
 		
 		System.out.println("L1==L2: " + l1.equals(l2));
 		
-		//l1.addData("Mrosko");
+		System.out.println("\nSet leaf1 to \"Melanie, Peavy\"");
+		l1.setData(v2);
 		
 		System.out.println("Leaf1: " + l1.toString());
 		System.out.println("Leaf2: " + l2.toString());
 		
 		System.out.println("L1==L2: " + l1.equals(l2));
 		
-		BinaryNode b = new BinaryNode();
-		b.setLeft(l1);
-		b.setRight(l2);
+		BinaryNode b = new BinaryNode(l1, l2);
 		
-		System.out.println("BinaryNode b: " + b);
+		System.out.println("\nBinaryNode b: " + b);
+		System.out.println("Left: " + b.getLeft());
+		System.out.println("Right: " + b.getRight());
+		
 	}
 	
 	public static void testMerkleTree() {
@@ -96,9 +102,10 @@ public class Driver {
 		
 		System.out.println("Test Run");
 		
-		//testNodes();
+		testNodes();
 		
-		testMerkleTree();
+		//testMerkleTree();
+		
 		
 		// Check input params
 		// Create 2 empty merkle trees
@@ -107,7 +114,5 @@ public class Driver {
 		// Validate
 		
 		
-		
 	}
-
 }
