@@ -37,16 +37,16 @@ public class BinaryNode {
 	}
 	
 	//-------------------------------------------------------
-	// Name: BinaryNode(int hash)
+	// Name: BinaryNode(BinaryNode child)
 	// PreCondition:  none
-	// PostCondition: creates BinaryNode with given hash value
+	// PostCondition: creates BinaryNode for leaf
 	//---------------------------------------------------------
-//	BinaryNode(String hash)
-//	{
-//		this.hashValue = hash;
-//		this.left = null;
-//		this.right = null;
-//	}
+	BinaryNode(BinaryNode child)
+	{
+		this.hashValue = child.getHashValue();
+		this.left = child;
+		this.right = null;
+	}
 	
 	//-------------------------------------------------------
 	// Name: BinaryNode(int hash, BinaryNode left, BinaryNode right)
