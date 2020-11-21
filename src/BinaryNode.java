@@ -73,6 +73,21 @@ public class BinaryNode {
 	// PostCondition: sets hashValue to the passed argument
 	//---------------------------------------------------------
 	public void setHashValue(String hashValue) {this.hashValue = hashValue;}
+	
+	//-------------------------------------------------------
+	// Name: rehash()
+	// PreCondition:  none
+	// PostCondition: updates the hash value based on the children
+	//---------------------------------------------------------
+	public void rehash() {
+		// check if node directly above leaf
+		if(right != null) {
+			this.hashValue = createHashFromChildren();
+		}
+		else {
+			this.hashValue = left.getHashValue();
+		}
+	}
 
 	//-------------------------------------------------------
 	// Name: getLeft()
@@ -119,10 +134,6 @@ public class BinaryNode {
 	{
 		if(! this.hashValue.equals(that.getHashValue()))
 			return false;
-		else if(this.left != that.getLeft())
-			return false;
-		else if(this.right != that.getRight())
-			return false;
 		else
 			return true;
 	}
@@ -142,8 +153,14 @@ public class BinaryNode {
 	
 	private String createHashFromChildren()
 	{
-		String lHash = left.getHashValue();
-		String rHash = right.getHashValue();
+		String lHash = "";
+		String rHash = "";
+		if(left != null) {
+			lHash = left.getHashValue();
+		}
+		if(right != null) {
+			rHash = right.getHashValue();
+		}
 		String combinedHash = lHash + rHash;
 		
 		try {

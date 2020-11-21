@@ -137,18 +137,106 @@ public class Validator {
 	}
 	
 	//-------------------------------------------------------
-	// Name: updateOriginal() 
+	// Name: updateMachine() 
 	// PreCondition:  none
 	// PostCondition: updates the machine's Merkle Tree based on upToDate
 	//---------------------------------------------------------
 	public Vector<String> updateMachine() 
 	{
-		// first check root node
+		// check existence of machine and upToDate
+		if(machine == null || machine.getRoot() == null) {
+			if(machine == null) {
+				System.out.println("Machine file does not exist, need to create new tree");
+				machine = upToDate;
+			}
+			else {
+				System.out.println("Updated file does not exist.");
+			}
+		}
+		// check if roots match
+		else if(machine.getRoot().equals(upToDate.getRoot())) {
+			System.out.println("Both files match.");
+		}
+		// parse tree for mismatch
+		else {
+			// check both trees are the same size
+			if(machine.depth() != upToDate.depth()) {
+				System.out.println("Not implemented yet.");
+				// more complicated stuff to do, have to add onto or delete from machine
+				
+				// if upToDate is larger, determine how much larger
+				// treat root as left side much farther down tree
+				// how far down depends on depth mismatch
+				// create new nodes in machine then perform update
+				
+				// if machine is larger
+				// delete nodes starting from right side up to root
+				// how many times depends on depth mismatch
+				
+				
+			}
+			else {
+				System.out.println("Updating machine.");
+				updateMachine(machine.getRoot(), upToDate.getRoot());
+			}
+		}
+		
 		// check left and right child
 		// pursue child that does not match until reach mismatch leaf
 		// update bad leaf and document change
 		// update hashes all the way back up the tree
 		return null;
+	}
+	
+	public void updateMachine(BinaryNode machineNode, BinaryNode upToDateNode) {
+		System.out.println("Nodes are: " + machineNode + ", and " + upToDateNode);
+		// check if nodes exist
+		if(machineNode == null || upToDateNode == null) {
+			System.out.println("At least one node is null.");
+			if(machineNode == null && upToDateNode == null) {
+				System.out.println("Both null, valid.");
+				// if both nodes null, valid
+				return;
+			}
+			else {
+				// should not reach this case b/c handle mismatch depth early
+				System.out.println("Something wrong...");
+			}
+		}
+		// check if hash values match at current nodes in trees
+		else if(machineNode.equals(upToDateNode)) {
+			// if hash values match, valid
+			System.out.println("Nodes match.");
+			return;
+		}
+		else {
+			// check if at leaf of tree
+			if(machineNode instanceof Leaf && upToDateNode instanceof Leaf) {
+				// update machine leaf to match
+				Leaf<String> mNode = (Leaf<String>) machineNode;
+				Leaf<String> uNode = (Leaf<String>) upToDateNode;
+				System.out.println("Update " + mNode.getData() + " to " + uNode.getData());
+				mNode.setData(uNode.getData());
+				System.out.println("Updated check: " + mNode);
+			}
+			else {
+				System.out.println("Check both sides for discrepancies.");
+				// check both sides of tree for discrepancy
+				System.out.println("Left");
+				updateMachine(machineNode.getLeft(), upToDateNode.getLeft());
+				System.out.println("Right");
+				updateMachine(machineNode.getRight(), upToDateNode.getRight());
+				
+				System.out.println("Update current node.");
+				// update current node to reflect changes lower in the tree
+				System.out.println("Old hash: " + machineNode);
+				machineNode.rehash();
+				System.out.println("New hash: " + machineNode);
+				
+				// machineNode and below has been updated to match upToDateNode, valid
+				return;
+			}
+		}
 	}
 
 }
