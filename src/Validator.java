@@ -69,7 +69,22 @@ public class Validator {
 	// PostCondition: set the up to date Merkle Tree to the passed argument
 	//---------------------------------------------------------
 	public void setUpToDate(MerkleTree upToDate) {this.upToDate = upToDate;}
-
+	
+	//-------------------------------------------------------
+	// Name: match() 
+	// PreCondition:  machine and upToDate exist
+	// PostCondition: returns if machine and upToDate roots match
+	//---------------------------------------------------------
+	public boolean match()
+	{
+		// check that machine and upToDate exist
+		if (machine != null || upToDate != null) {
+			return machine.getRoot().equals(upToDate.getRoot());
+		}
+		// machine and upToDate don't both exist
+		return false;
+	}
+	
 	//-------------------------------------------------------
 	// Name: checkPath()
 	// PreCondition: machine exists and machine root exists
