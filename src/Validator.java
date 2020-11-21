@@ -42,7 +42,6 @@ public class Validator {
 		this.upToDate = upToDate;
 	}
 	
-	
 	//-------------------------------------------------------
 	// Name: getMachine()
 	// PreCondition:  none
@@ -73,12 +72,53 @@ public class Validator {
 
 	//-------------------------------------------------------
 	// Name: checkPath()
-	// PreCondition:  none
-	// PostCondition: checks if paths down Merkle Trees are the same
+	// PreCondition: machine exists and machine root exists
+	// PostCondition: checks if given path of hashes exists in machine 
+	//	starting from root
 	//---------------------------------------------------------
-	public boolean checkPath()
+	public boolean checkPath(Vector<String> path)
 	{
+		// check if machine exists and machine root exists
+		if(machine != null && machine.getRoot() != null) {
+			return checkPath(path, machine.getRoot());
+		}
+		
+		// machine or root does not exist but trying to check path, invalid
 		return false;
+	}
+	
+	//-------------------------------------------------------
+	// Name: checkPath(Vector<String> path, BinaryNode node)
+	// PreCondition:  none
+	// PostCondition: checks if given path of hashes exists from given node
+	//---------------------------------------------------------
+	public boolean checkPath(Vector<String> path, BinaryNode node)
+	{
+		// check if no more path
+		if(path.size() == 0) {
+			// no more path left, valid
+			return true;
+		}
+		// check if node exists and is not a leaf
+		else if(node == null && !(node instanceof Leaf)) {
+			// end of tree but more path, invalid
+			return false;
+		}
+		// check if last hash in path
+		else if (path.size() == 1) {
+			// if current node matches current hash in path, valid
+			return path.get(0).equals(node.getHashValue());
+		}
+		// more path and more tree exist
+		else {
+			// check if current node matches current hash in path
+			if(path.get(0).equals(node.getHashValue())) {
+				// check if path continues in left or right node
+				return checkPath((Vector<String>) path.subList(1, path.size()), node.getLeft()) || checkPath((Vector<String>) path.subList(1, path.size()), node.getRight());
+			}
+			// current hash in path does not match current node, invalid
+			return false;
+		}
 	}
 	
 	//-------------------------------------------------------
