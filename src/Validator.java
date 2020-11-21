@@ -141,12 +141,14 @@ public class Validator {
 	// PreCondition:  none
 	// PostCondition: updates the machine's Merkle Tree based on upToDate
 	//---------------------------------------------------------
-	public Vector<String> updateMachine() 
+	public void updateMachine() 
 	{
 		// check existence of machine and upToDate
 		if(machine == null || machine.getRoot() == null) {
 			if(machine == null) {
 				System.out.println("Machine file does not exist, need to create new tree");
+				// TODO
+				// this is not correct, placeholder
 				machine = upToDate;
 			}
 			else {
@@ -155,58 +157,66 @@ public class Validator {
 		}
 		// check if roots match
 		else if(machine.getRoot().equals(upToDate.getRoot())) {
-			System.out.println("Both files match.");
+			System.out.println("Both files match, no update needed.");
+			return;
 		}
 		// parse tree for mismatch
 		else {
 			// check both trees are the same size
 			if(machine.depth() != upToDate.depth()) {
-				System.out.println("Not implemented yet.");
-				// more complicated stuff to do, have to add onto or delete from machine
+				//System.out.println("Accommodating depth mismatch.");
+
+				// check which is larger
+				if(machine.depth() < upToDate.depth()) {
+					//System.out.println("upToDate larger");
+					// move original machine root down tree to make depths match
+					int diff = upToDate.depth() - machine.depth();
+					for(int i = 0; i < diff; i++) {
+						machine.setRoot(new BinaryNode(machine.getRoot()));
+					}
+					fillTree(machine.getRoot(), upToDate.depth() - 1);
+				}
+				else {
+					//System.out.println("machine larger");
+					// set root of machine to farther down tree to make depths match
+					int diff = machine.depth() - upToDate.depth();
+					for(int i = 0; i < diff; i++) {
+						machine.setRoot(machine.getRoot().getLeft());
+					}
+				}
 				
-				// if upToDate is larger, determine how much larger
-				// treat root as left side much farther down tree
-				// how far down depends on depth mismatch
-				// create new nodes in machine then perform update
-				
-				// if machine is larger
-				// delete nodes starting from right side up to root
-				// how many times depends on depth mismatch
-				
-				
+//				System.out.println("After accommodating depth mismatch.");
+//				System.out.println();
+//				
+//				System.out.println("machine" + ", depth: " + machine.depth());
+//				machine.display();
+//				System.out.println();
+//				System.out.println("upToDate" + ", depth: " + upToDate.depth());
+//				upToDate.display();
 			}
-			else {
-				System.out.println("Updating machine.");
-				updateMachine(machine.getRoot(), upToDate.getRoot());
-			}
+			
+			System.out.println("Updating machine.");
+			updateMachine(machine.getRoot(), upToDate.getRoot());
 		}
-		
-		// check left and right child
-		// pursue child that does not match until reach mismatch leaf
-		// update bad leaf and document change
-		// update hashes all the way back up the tree
-		return null;
+
 	}
 	
-	public void updateMachine(BinaryNode machineNode, BinaryNode upToDateNode) {
-		System.out.println("Nodes are: " + machineNode + ", and " + upToDateNode);
+	private void updateMachine(BinaryNode machineNode, BinaryNode upToDateNode) {
+		//System.out.println("Nodes are: " + machineNode + ", and " + upToDateNode);
 		// check if nodes exist
 		if(machineNode == null || upToDateNode == null) {
-			System.out.println("At least one node is null.");
 			if(machineNode == null && upToDateNode == null) {
-				System.out.println("Both null, valid.");
 				// if both nodes null, valid
 				return;
 			}
-			else {
-				// should not reach this case b/c handle mismatch depth early
-				System.out.println("Something wrong...");
-			}
+			// depth check in other updateMachine handles case of only one null node
+			// if reaches here something isn't working correctly
+			System.out.println("Something wrong...");
 		}
 		// check if hash values match at current nodes in trees
 		else if(machineNode.equals(upToDateNode)) {
 			// if hash values match, valid
-			System.out.println("Nodes match.");
+			//System.out.println("Nodes match.");
 			return;
 		}
 		else {
@@ -217,24 +227,44 @@ public class Validator {
 				Leaf<String> uNode = (Leaf<String>) upToDateNode;
 				System.out.println("Update " + mNode.getData() + " to " + uNode.getData());
 				mNode.setData(uNode.getData());
-				System.out.println("Updated check: " + mNode);
+				//System.out.println("Updated check: " + mNode);
 			}
 			else {
-				System.out.println("Check both sides for discrepancies.");
+				//System.out.println("Check both sides for discrepancies.");
 				// check both sides of tree for discrepancy
-				System.out.println("Left");
+				//System.out.println("Left");
 				updateMachine(machineNode.getLeft(), upToDateNode.getLeft());
-				System.out.println("Right");
+				//System.out.println("Right");
 				updateMachine(machineNode.getRight(), upToDateNode.getRight());
 				
-				System.out.println("Update current node.");
+				//System.out.println("Update current node.");
 				// update current node to reflect changes lower in the tree
-				System.out.println("Old hash: " + machineNode);
+				//System.out.println("Old hash: " + machineNode);
 				machineNode.rehash();
-				System.out.println("New hash: " + machineNode);
+				//System.out.println("New hash: " + machineNode);
 				
 				// machineNode and below has been updated to match upToDateNode, valid
 				return;
+			}
+		}
+	}
+	
+	private void fillTree(BinaryNode toFill, int depth) {
+		//System.out.println("Node: " + toFill + ", depth: " + depth);
+		if(toFill == null) {
+			return;
+		}
+		if(depth == 0) {
+			toFill.setLeft(new Leaf<String>());
+		}
+		for(int i = 0; i < depth; i++) {
+			if(toFill.left == null) {
+				toFill.setLeft(new BinaryNode());
+				fillTree(toFill.getLeft(), depth - 1);
+			}
+			if(toFill.right == null) {
+				toFill.setRight(new BinaryNode());
+				fillTree(toFill.getRight(), depth - 1);
 			}
 		}
 	}

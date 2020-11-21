@@ -97,11 +97,12 @@ public class Driver {
 	}
 
 	public static void testValidator() {
-		MerkleTree testTree1 = new MerkleTree("testData1.csv");
+		MerkleTree testTree1 = new MerkleTree("testData.csv");
 		testTree1.build();
-		MerkleTree testTree2 = new MerkleTree("testData2.csv");
+		MerkleTree testTree2 = new MerkleTree("testData.csv");
 		testTree2.build();
 		
+		System.out.println("Original Trees");
 		System.out.println("testTree1" + ", depth: " + testTree1.depth());
 		testTree1.display();
 		System.out.println();
@@ -113,11 +114,16 @@ public class Driver {
 		
 		Validator validator = new Validator(testTree1, testTree2);
 		System.out.println("validator.match(): " + validator.match());
+		
+		System.out.println();
+		System.out.println();
+		
 		validator.updateMachine();
 		
 		System.out.println();
 		System.out.println();
 		
+		System.out.println("Trees After Update");
 		System.out.println("testTree1" + ", depth: " + testTree1.depth());
 		testTree1.display();
 		System.out.println();
@@ -127,7 +133,7 @@ public class Driver {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Test Run");
+		//System.out.println("Test Run");
 		
 		//testNodes();
 		

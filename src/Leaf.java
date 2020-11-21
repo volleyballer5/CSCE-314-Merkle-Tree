@@ -25,6 +25,17 @@ public class Leaf<E> extends BinaryNode {
 	// reminder to set left and right children to node
 	
 	//-------------------------------------------------------
+	// Name: Leaf()
+	// PreCondition:  none
+	// PostCondition: creates a Leaf with no data
+	//---------------------------------------------------------
+	Leaf()
+	{
+		super();
+		this.data = null;
+	}
+	
+	//-------------------------------------------------------
 	// Name: Leaf(Vector<String> data)
 	// PreCondition:  none
 	// PostCondition: creates a Leaf with given data
@@ -92,7 +103,7 @@ public class Leaf<E> extends BinaryNode {
 	//---------------------------------------------------------
 	public String toString()
 	{
-		return data.toString() + ", " + "Hash: " + hashValue;
+		return data + ", " + "Hash: " + hashValue;
 	}
 	
 	
