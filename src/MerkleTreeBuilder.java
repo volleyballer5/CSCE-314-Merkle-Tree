@@ -58,36 +58,6 @@ public class MerkleTreeBuilder {
 	//---------------------------------------------------------
 	public void setFile(String file) {this.file = file;}
 	
-	//-------------------------------------------------------
-	// Name: hashLine()
-	// PreCondition:  none
-	// PostCondition: returns the hashed value of the line
-	//---------------------------------------------------------
-	public int hashLine(Vector<String> line) {return 1;}
-	// update function with hash function
-	
-	//-------------------------------------------------------
-	// Name: hashLeaf()
-	// PreCondition:  none
-	// PostCondition: returns the hashed node of the leaf
-	//---------------------------------------------------------
-	public BinaryNode hashLeaf(Leaf<String> leaf) {
-		// creates new binary node from hash of Leaf
-		return new BinaryNode(hashLine(leaf.getData()), leaf, null);
-	}
-	
-	//-------------------------------------------------------
-	// Name: hashNode()
-	// PreCondition:  none
-	// PostCondition: returns the hashed node of two nodes
-	//---------------------------------------------------------
-	public BinaryNode hashNodes(BinaryNode leftNode, BinaryNode rightNode) {
-		// update with hash function
-		// hashed the two children then creates new node with that hashValue and children
-		int hashVal = leftNode.getHashValue() + rightNode.getHashValue(); 
-		return new BinaryNode(hashVal, leftNode, rightNode);
-	}
-	
 	public BinaryNode build() {
 		// setup to read from file
 		BufferedReader reader = null;
@@ -108,7 +78,7 @@ public class MerkleTreeBuilder {
             	splitLine.addAll(Arrays.asList(line.split(",")));
             	
             	// adds binaryNode containing hash info for leaf and subsequent data to hashedLines vector
-            	hashedLines.add(hashLeaf(new Leaf<String>(splitLine)));
+            	hashedLines.add(new BinaryNode(new Leaf<String>(splitLine)));
             	
             }
             
@@ -137,11 +107,12 @@ public class MerkleTreeBuilder {
         // create needed duplicate nodes and add to hashedLines
         BinaryNode duplicate = hashedLines.lastElement();
         for(int i = 0; i < neededDuplication; i++) {
-        	hashedLines.add(new BinaryNode(duplicate.getHashValue(), new Leaf<String>(splitLine), null));
+        	hashedLines.add(new BinaryNode(duplicate.getLeft()));
+        	//hashedLines.add(new BinaryNode(duplicate.getHashValue(), new Leaf<String>(splitLine), null));
         }
         
         // return the final root hashed node
-        return hashNodes(hashHalf(hashedLines.subList(0, hashedLines.size() / 2)), hashHalf(hashedLines.subList(hashedLines.size() / 2, hashedLines.size())));
+        return new BinaryNode(hashHalf(hashedLines.subList(0, hashedLines.size() / 2)), hashHalf(hashedLines.subList(hashedLines.size() / 2, hashedLines.size())));
 	}
 	
 	//-------------------------------------------------------
@@ -153,11 +124,11 @@ public class MerkleTreeBuilder {
 		if(half != null) {
 			// base case is 2 elements in List - returns a hash of the two nodes
 			if(half.size() == 2) {
-				return hashNodes(half.get(0), half.get(1));
+				return new BinaryNode(half.get(0), half.get(1));
 			}
 			// recursion - calls hashHalf on each half of the list and hashes result
 			else {
-				return hashNodes(hashHalf(half.subList(0, half.size() / 2)), hashHalf(half.subList(half.size() / 2, half.size())));
+				return new BinaryNode(hashHalf(half.subList(0, half.size() / 2)), hashHalf(half.subList(half.size() / 2, half.size())));
 			}
 		}
 		return null;

@@ -102,9 +102,9 @@ public class Driver {
 		
 		System.out.println("Test Run");
 		
-		testNodes();
+		//testNodes();
 		
-		//testMerkleTree();
+		testMerkleTree();
 		
 		
 		// Check input params
