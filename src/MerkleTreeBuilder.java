@@ -58,6 +58,11 @@ public class MerkleTreeBuilder {
 	//---------------------------------------------------------
 	public void setFile(String file) {this.file = file;}
 	
+	//-------------------------------------------------------
+	// Name: build()
+	// PreCondition:  file exists
+	// PostCondition: creates Merkle tree from file and returns root
+	//---------------------------------------------------------
 	public BinaryNode build() {
 		// setup to read from file
 		BufferedReader reader = null;
@@ -108,7 +113,6 @@ public class MerkleTreeBuilder {
         BinaryNode duplicate = hashedLines.lastElement();
         for(int i = 0; i < neededDuplication; i++) {
         	hashedLines.add(new BinaryNode(duplicate.getLeft()));
-        	//hashedLines.add(new BinaryNode(duplicate.getHashValue(), new Leaf<String>(splitLine), null));
         }
         
         // return the final root hashed node
@@ -118,7 +122,8 @@ public class MerkleTreeBuilder {
 	//-------------------------------------------------------
 	// Name: hashHalf()
 	// PreCondition:  half contains 2^n elements
-	// PostCondition: returns the hash of the List half
+	// PostCondition: returns the binaryNode constructed from the hash 
+	// 	of the List half
 	//---------------------------------------------------------
 	private BinaryNode hashHalf(List<BinaryNode> half) {
 		if(half != null) {

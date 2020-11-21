@@ -55,7 +55,7 @@ public class MerkleTree extends BinaryTree{
 	//-------------------------------------------------------
 	// Name: build()
 	// PreCondition:  none
-	// PostCondition: Merkle Tree constructed from file
+	// PostCondition: Merkle Tree constructed from file and root updated
 	//---------------------------------------------------------
 	public void build() {
 		MerkleTreeBuilder builder = new MerkleTreeBuilder(file);
@@ -72,7 +72,7 @@ public class MerkleTree extends BinaryTree{
 	//-------------------------------------------------------
 	// Name: depth()
 	// PreCondition:  tree is not empty
-	// PostCondition: returns the depth of the tree
+	// PostCondition: returns the depth of the tree not counting leaves
 	//---------------------------------------------------------
 	public int depth() {
 		if(root != null) {
@@ -86,7 +86,7 @@ public class MerkleTree extends BinaryTree{
 	// PreCondition:  node exists
 	// PostCondition: returns the depth of the passed node
 	//---------------------------------------------------------
-	public int depth(BinaryNode node) {
+	private int depth(BinaryNode node) {
 		if(node != null) {
 			return 1 + depth(node.getRight());
 		}
