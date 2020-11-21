@@ -107,7 +107,7 @@ public class Validator {
 	// PreCondition:  none
 	// PostCondition: checks if given path of hashes exists from given node
 	//---------------------------------------------------------
-	public boolean checkPath(Vector<String> path, BinaryNode node)
+	private boolean checkPath(Vector<String> path, BinaryNode node)
 	{
 		// check if no more path
 		if(path.size() == 0) {
@@ -138,8 +138,8 @@ public class Validator {
 	
 	//-------------------------------------------------------
 	// Name: updateMachine() 
-	// PreCondition:  none
-	// PostCondition: updates the machine's Merkle Tree based on upToDate
+	// PreCondition:  machine and upToDate exist
+	// PostCondition: updated, if needed, the machine's Merkle Tree based on upToDate
 	//---------------------------------------------------------
 	public void updateMachine() 
 	{
@@ -201,6 +201,11 @@ public class Validator {
 
 	}
 	
+	//-------------------------------------------------------
+	// Name: updateMachine(BinaryNode machineNode, BinaryNode upToDateNode) 
+	// PreCondition:  machineNode and upToDateNode exists
+	// PostCondition: updated, if needed, the machineNode based on the upTodateNode
+	//---------------------------------------------------------
 	private void updateMachine(BinaryNode machineNode, BinaryNode upToDateNode) {
 		//System.out.println("Nodes are: " + machineNode + ", and " + upToDateNode);
 		// check if nodes exist
@@ -249,6 +254,11 @@ public class Validator {
 		}
 	}
 	
+	//-------------------------------------------------------
+	// Name: fillTree(BinaryNode toFill, int depth)
+	// PreCondition:  none
+	// PostCondition: created empty nodes needed to fill subtree
+	//---------------------------------------------------------
 	private void fillTree(BinaryNode toFill, int depth) {
 		//System.out.println("Node: " + toFill + ", depth: " + depth);
 		if(toFill == null) {
