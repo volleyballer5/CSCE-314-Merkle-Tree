@@ -80,7 +80,6 @@ public class BinaryNode {
 	// PostCondition: updates the hash value based on the children
 	//---------------------------------------------------------
 	public void rehash() {
-		// check if node directly above leaf
 		if(right != null) {
 			this.hashValue = createHashFromChildren();
 		}
@@ -146,11 +145,14 @@ public class BinaryNode {
 	public String toString()
 	{
 		return "Hash: " + hashValue;
-		//return "Hash: " + hashValue + "\n" + "Left Child: " + left.toString() + "\n" + "Right Child: " + right.toString();
 	}
 	
 	
-	
+	//-------------------------------------------------------
+	// Name: createHashFromChildren()
+	// PreCondition:  none
+	// PostCondition: hashes the concatenated left and right child hashes 
+	//---------------------------------------------------------
 	private String createHashFromChildren()
 	{
 		String lHash = "";
@@ -175,6 +177,12 @@ public class BinaryNode {
 		
 	}
 	
+	//-------------------------------------------------------
+	// Name: bytesToHex(byte[] hash)
+	// PreCondition:  input hash is in byte[] format
+	// PostCondition: returns hash as a hexadecimal string
+	// Reference: https://www.baeldung.com/sha-256-hashing-java
+	//---------------------------------------------------------
 	protected String bytesToHex(byte[] hash) {
 	    StringBuilder hexString = new StringBuilder(2 * hash.length);
 	    for (int i = 0; i < hash.length; i++) {

@@ -42,17 +42,25 @@ public class Driver {
 	
 	public static void testNodes()
 	{
-		Vector<String> v1 = new Vector<>();
-		v1.add("Kyle");
-		v1.add("Mrosko");
+		Vector<Integer> v1 = new Vector<>();
+		v1.add(20);
+		v1.add(23);
+		Vector<String> v11 = new Vector<>();
+		v11.add("Kyle");
+		v11.add("Mrosko");
 		Vector<String> v2 = new Vector<>();
 		v2.add("Melanie");
 		v2.add("Peavy");
 		Vector<String> v3 = new Vector<>();
 		v3.add("Kyle");
 		
-		Leaf<String> l1 = new Leaf<>(v1);
+		Leaf<String> l1 = new Leaf<>(v11);
 		Leaf<String> l2 = new Leaf<>(v2);
+		Leaf<Integer> l3 = new Leaf<>(v1);
+		
+		System.out.println("Integer Leaf: " + l3);
+		
+		System.out.println();
 		
 		System.out.println("Leaf1: " + l1.toString());
 		System.out.println("Leaf2: " + l2.toString());
@@ -82,24 +90,21 @@ public class Driver {
 	}
 	
 	public static void testMerkleTree() {
-		MerkleTree testTree = new MerkleTree("testData.csv");
-		System.out.println("Empty Tree");
-		testTree.display();
-		System.out.println();
-		System.out.println("Build Stuff");
+		MerkleTree testTree = new MerkleTree("testData1.csv");
+		System.out.println("Build Merkle Tree with testData1.csv");
 		testTree.build();
 		System.out.println();
 		System.out.println("Root");
 		System.out.println(testTree.getRoot().getHashValue());
 		System.out.println();
-		System.out.println("New Tree");
+		System.out.println("Tree");
 		testTree.display();
 	}
 
 	public static void testValidator() {
-		MerkleTree testTree1 = new MerkleTree("testData.csv");
+		MerkleTree testTree1 = new MerkleTree("testData1.csv");
 		testTree1.build();
-		MerkleTree testTree2 = new MerkleTree("testData.csv");
+		MerkleTree testTree2 = new MerkleTree("testData2.csv");
 		testTree2.build();
 		
 		System.out.println("Original Trees");
@@ -129,25 +134,22 @@ public class Driver {
 		System.out.println();
 		System.out.println("testTree2" + ", depth: " + testTree2.depth());
 		testTree2.display();
+		
+		System.out.println();
+		System.out.println();
+		
+		System.out.println("validator.match(): " + validator.match());
 	}
 	
 	public static void main(String[] args) {
 		
 		//System.out.println("Test Run");
 		
-		//testNodes();
+		testNodes();
 		
 		//testMerkleTree();
 		
-		testValidator();
-		
-		
-		// Check input params
-		// Create 2 empty merkle trees
-		// MerkleTreeBuilder(inputFileUpdated and empty merkle tree?)
-		// MerkleTreeBuilder(inputFileChecking and empty merkle tree?)
-		// Validate
-		
-		
+		//testValidator();
+			
 	}
 }

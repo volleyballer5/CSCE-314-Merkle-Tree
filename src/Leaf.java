@@ -22,13 +22,12 @@ import java.util.Vector;
 public class Leaf<E> extends BinaryNode {
 	
 	private Vector<E> data;
-	// reminder to set left and right children to node
 	
 	//-------------------------------------------------------
 	// Name: Leaf()
 	// PreCondition:  none
 	// PostCondition: creates a Leaf with no data
-	//---------------------------------------------------------
+	//-------------------------------------------------------
 	Leaf()
 	{
 		super();
@@ -57,11 +56,8 @@ public class Leaf<E> extends BinaryNode {
 	//-------------------------------------------------------
 	// Name: setData(Vector<String> data)
 	// PreCondition:  none
-	// PostCondition: sets data to given argument
+	// PostCondition: sets data to given argument and updates the hash value
 	//---------------------------------------------------------
-	// TODO: should this update the hashvalue??
-	// this should be a thing, but very complication since it has to reflect up (ptr to parent)
-	// shouldnt need for our project application
 	public void setData(Vector<E> data)
 	{
 		this.data = data;
@@ -106,7 +102,11 @@ public class Leaf<E> extends BinaryNode {
 		return data + ", " + "Hash: " + hashValue;
 	}
 	
-	
+	//-------------------------------------------------------
+	// Name: hashData(Vector<E> input)
+	// PreCondition:  input has a valid toString
+	// PostCondition: returns a hash value string of input data in hexadecimal using SHA-256
+	//-------------------------------------------------------
 	private String hashData(Vector<E> input)
 	{
 		try {

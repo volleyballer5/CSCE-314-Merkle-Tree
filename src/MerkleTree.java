@@ -59,7 +59,7 @@ public class MerkleTree extends BinaryTree{
 	//---------------------------------------------------------
 	public void build() {
 		MerkleTreeBuilder builder = new MerkleTreeBuilder(file);
-		setRoot(builder.build());
+		this.root = builder.build();
 	}
 	
 	//-------------------------------------------------------
