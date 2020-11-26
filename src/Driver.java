@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -123,7 +127,9 @@ public class Driver {
 		System.out.println();
 		System.out.println();
 		
+		//System.out.println("Testing new function: " + testTree1.validate(testTree2));
 		validator.updateMachine();
+		//System.out.println("Testing new function: " + testTree1.validate(testTree2));
 		
 		System.out.println();
 		System.out.println();
@@ -141,15 +147,94 @@ public class Driver {
 		System.out.println("validator.match(): " + validator.match());
 	}
 	
-	public static void main(String[] args) {
+	public static void demo(String updated, String machine) throws IOException
+	{
+		System.out.println("As a system admin for our office supplies company,");
+		System.out.println("I need to quickly check that the sales reports on");
+		System.out.println("each computer is always up to date. This program");
+		System.out.println("is an example of a single computer syncing with the");
+		System.out.println("master database using Merkle Trees.\n");
+		
+		System.out.println("Reading the master database.");
+		BufferedReader reader = new BufferedReader(new FileReader(updated));
+		System.out.println(reader.readLine());
+		System.out.println(reader.readLine());
+		System.out.println(reader.readLine());
+		System.out.println(reader.readLine());
+		System.out.println("...\n");
+		
+		System.out.println("Constructing master database Merkle Tree.\n");
+		
+		MerkleTree updatedTree = new MerkleTree("officeSuppliesSalesUPDATED.csv");
+		updatedTree.build();
+		
+		System.out.println("Reading the machine's sales report.");
+		BufferedReader reader1 = new BufferedReader(new FileReader(machine));
+		System.out.println(reader1.readLine());
+		System.out.println(reader1.readLine());
+		System.out.println(reader1.readLine());
+		System.out.println(reader1.readLine());
+		System.out.println("...\n");
+		
+		System.out.println("Constructing the machine's Merkle Tree.\n");
+		
+		MerkleTree machineTree = new MerkleTree("officeSuppliesSalesMACHINE.csv");
+		machineTree.build();
+		
+		System.out.println("Checking if machine is up to date:");
+		System.out.println("Master database root hash: " + updatedTree.getRoot().hashValue);
+		System.out.println("Machine root hash: " + machineTree.getRoot().hashValue);
+		System.out.println();
+		
+		boolean same = updatedTree.validate(machineTree);
+		
+		if(same)
+		{
+			System.out.println("Machine is already up to date.");
+			System.out.println("Exiting...");
+			System.exit(0);
+		}
+		else
+		{
+			System.out.println("Machine does not match master database.");
+			
+			Validator validator = new Validator(machineTree, updatedTree);
+			validator.updateMachine();
+			
+			System.out.println("\nMachine up to date?: " + validator.match());
+			
+			
+		}
+	}
+	
+	public static void main(String[] args) throws IOException {
 		
 		//System.out.println("Test Run");
 		
-		testNodes();
-		System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");
-		testMerkleTree();
-		System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");
-		testValidator();
-			
+//		testNodes();
+//		System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");
+//		testMerkleTree();
+//		System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");
+//		testValidator();
+		
+		
+		if(args.length > 0)
+		{
+			try
+			{
+				demo(args[0],args[1]);
+			}
+			catch(Exception e)
+			{
+				System.out.println("Error in calling program: ");
+				e.printStackTrace();
+				System.exit(1);
+			}
+		}
+		else
+		{
+			demo("officeSuppliesSalesUPDATED.csv", "officeSuppliesSalesMACHINE.csv");
+		}
+		
 	}
 }

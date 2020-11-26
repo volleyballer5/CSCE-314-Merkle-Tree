@@ -67,7 +67,10 @@ public class MerkleTree extends BinaryTree{
 	// PreCondition:  recent has been constructed
 	// PostCondition: returns whether two Merkle Trees match
 	//---------------------------------------------------------
-	public boolean validate(MerkleTree recent) {return true;}
+	public boolean validate(MerkleTree recent)
+	{
+		return this.root.hashValue.matches(recent.getRoot().hashValue);
+	}
 	
 	//-------------------------------------------------------
 	// Name: depth()
