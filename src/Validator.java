@@ -7,8 +7,8 @@
 ** E-mail:  kylemrosko@tamu.edu, melanie_peavy@tamu.edu 
 **
 **   This file contains the the Validator class
-**   and various helper methods which is will
-**   be used verify two different Merkle trees.
+**   and various helper methods which can be
+**   be used verify and update two Merkle trees.
 **
 **
 ***********************************************/
@@ -71,21 +71,6 @@ public class Validator {
 	public void setUpToDate(MerkleTree upToDate) {this.upToDate = upToDate;}
 	
 	//-------------------------------------------------------
-	// Name: match() 
-	// PreCondition:  machine and upToDate exist
-	// PostCondition: returns if machine and upToDate roots match
-	//---------------------------------------------------------
-	public boolean match()
-	{
-		// check that machine and upToDate exist
-		if (machine != null || upToDate != null) {
-			return machine.getRoot().equals(upToDate.getRoot());
-		}
-		// machine and upToDate don't both exist
-		return false;
-	}
-	
-	//-------------------------------------------------------
 	// Name: checkPath()
 	// PreCondition: machine exists and machine root exists
 	// PostCondition: checks if given path of hashes exists in machine 
@@ -139,17 +124,17 @@ public class Validator {
 	//-------------------------------------------------------
 	// Name: updateMachine() 
 	// PreCondition:  machine and upToDate exist
-	// PostCondition: updated, if needed, the machine's Merkle Tree based on upToDate
+	// PostCondition: updates, if needed, the machine's Merkle Tree based on upToDate
 	//---------------------------------------------------------
 	public void updateMachine() 
 	{
 		// check existence of machine and upToDate
 		if(machine == null || machine.getRoot() == null) {
 			if(machine == null) {
-				System.out.println("Machine file does not exist, need to create new tree");
-				// TODO
-				// this is not correct, placeholder
-				machine = upToDate;
+				System.out.println("Machine file does not exist, need to create new tree.");
+				fillTree(new BinaryNode(), upToDate.depth() - 1);
+				System.out.println("Machine created. Updating machine.");
+				updateMachine(machine.getRoot(), upToDate.getRoot());
 			}
 			else {
 				System.out.println("Updated file does not exist.");
@@ -184,15 +169,6 @@ public class Validator {
 						machine.setRoot(machine.getRoot().getLeft());
 					}
 				}
-				
-//				System.out.println("After accommodating depth mismatch.");
-//				System.out.println();
-//				
-//				System.out.println("machine" + ", depth: " + machine.depth());
-//				machine.display();
-//				System.out.println();
-//				System.out.println("upToDate" + ", depth: " + upToDate.depth());
-//				upToDate.display();
 			}
 			
 			System.out.println("Updating machine.");
@@ -207,7 +183,6 @@ public class Validator {
 	// PostCondition: updated, if needed, the machineNode based on the upTodateNode
 	//---------------------------------------------------------
 	private void updateMachine(BinaryNode machineNode, BinaryNode upToDateNode) {
-		//System.out.println("Nodes are: " + machineNode + ", and " + upToDateNode);
 		// check if nodes exist
 		if(machineNode == null || upToDateNode == null) {
 			if(machineNode == null && upToDateNode == null) {
@@ -221,32 +196,26 @@ public class Validator {
 		// check if hash values match at current nodes in trees
 		else if(machineNode.equals(upToDateNode)) {
 			// if hash values match, valid
-			//System.out.println("Nodes match.");
 			return;
 		}
 		else {
 			// check if at leaf of tree
 			if(machineNode instanceof Leaf && upToDateNode instanceof Leaf) {
 				// update machine leaf to match
+				@SuppressWarnings("unchecked")
 				Leaf<String> mNode = (Leaf<String>) machineNode;
+				@SuppressWarnings("unchecked")
 				Leaf<String> uNode = (Leaf<String>) upToDateNode;
 				System.out.println("Update " + mNode.getData() + " to " + uNode.getData());
 				mNode.setData(uNode.getData());
-				//System.out.println("Updated check: " + mNode);
 			}
 			else {
-				//System.out.println("Check both sides for discrepancies.");
 				// check both sides of tree for discrepancy
-				//System.out.println("Left");
 				updateMachine(machineNode.getLeft(), upToDateNode.getLeft());
-				//System.out.println("Right");
 				updateMachine(machineNode.getRight(), upToDateNode.getRight());
 				
-				//System.out.println("Update current node.");
 				// update current node to reflect changes lower in the tree
-				//System.out.println("Old hash: " + machineNode);
 				machineNode.rehash();
-				//System.out.println("New hash: " + machineNode);
 				
 				// machineNode and below has been updated to match upToDateNode, valid
 				return;
@@ -260,13 +229,15 @@ public class Validator {
 	// PostCondition: created empty nodes needed to fill subtree
 	//---------------------------------------------------------
 	private void fillTree(BinaryNode toFill, int depth) {
-		//System.out.println("Node: " + toFill + ", depth: " + depth);
+		// checks if node can, and needs to, be filled
 		if(toFill == null) {
 			return;
 		}
-		if(depth == 0) {
+		else if(depth == 0) {
 			toFill.setLeft(new Leaf<String>());
 		}
+		
+		// loops through levels of tree until full tree of desired depth
 		for(int i = 0; i < depth; i++) {
 			if(toFill.left == null) {
 				toFill.setLeft(new BinaryNode());
@@ -278,5 +249,4 @@ public class Validator {
 			}
 		}
 	}
-
 }

@@ -1,10 +1,6 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Vector;
 
 /*****************************************
@@ -44,6 +40,12 @@ import java.util.Vector;
 
 public class Driver {
 	
+	//-------------------------------------------------------
+	// Name: testNodes()
+	// PreCondition:  none
+	// PostCondition: Creates various types of Leaves and Nodes 
+	// 	to check functionality
+	//---------------------------------------------------------
 	public static void testNodes()
 	{
 		Vector<Integer> v1 = new Vector<>();
@@ -93,6 +95,11 @@ public class Driver {
 		
 	}
 	
+	//-------------------------------------------------------
+	// Name: testMerkeTree()
+	// PreCondition:  none
+	// PostCondition: Creates and displays basic MerkleTree
+	//---------------------------------------------------------
 	public static void testMerkleTree() {
 		MerkleTree testTree = new MerkleTree("testData1.csv");
 		System.out.println("Build Merkle Tree with testData1.csv");
@@ -105,6 +112,12 @@ public class Driver {
 		testTree.display();
 	}
 
+	//-------------------------------------------------------
+	// Name: testValidator()
+	// PreCondition:  none
+	// PostCondition: Creates Merkle Trees then performs validation 
+	//	and updates as needed
+	//---------------------------------------------------------
 	public static void testValidator() {
 		MerkleTree testTree1 = new MerkleTree("testData1.csv");
 		testTree1.build();
@@ -121,13 +134,13 @@ public class Driver {
 		System.out.println();
 		System.out.println();
 		
-		Validator validator = new Validator(testTree1, testTree2);
-		System.out.println("validator.match(): " + validator.match());
+		System.out.println("validator.match(): " + testTree1.validate(testTree2));
 		
 		System.out.println();
 		System.out.println();
 		
 		//System.out.println("Testing new function: " + testTree1.validate(testTree2));
+		Validator validator = new Validator(testTree1, testTree2);
 		validator.updateMachine();
 		//System.out.println("Testing new function: " + testTree1.validate(testTree2));
 		
@@ -144,9 +157,15 @@ public class Driver {
 		System.out.println();
 		System.out.println();
 		
-		System.out.println("validator.match(): " + validator.match());
+		System.out.println("validator.match(): " + testTree1.validate(testTree2));
 	}
 	
+	//-------------------------------------------------------
+	// Name: demo()
+	// PreCondition:  none
+	// PostCondition: Demonstrates project application through file 
+	//	validation and synchronization
+	//---------------------------------------------------------
 	public static void demo(String updated, String machine) throws IOException
 	{
 		System.out.println("As a system admin for our office supplies company,");
@@ -162,6 +181,7 @@ public class Driver {
 		System.out.println(reader.readLine());
 		System.out.println(reader.readLine());
 		System.out.println("...\n");
+		reader.close();
 		
 		System.out.println("Constructing master database Merkle Tree.\n");
 		
@@ -175,6 +195,7 @@ public class Driver {
 		System.out.println(reader1.readLine());
 		System.out.println(reader1.readLine());
 		System.out.println("...\n");
+		reader1.close();
 		
 		System.out.println("Constructing the machine's Merkle Tree.\n");
 		
@@ -201,7 +222,7 @@ public class Driver {
 			Validator validator = new Validator(machineTree, updatedTree);
 			validator.updateMachine();
 			
-			System.out.println("\nMachine up to date?: " + validator.match());
+			System.out.println("\nMachine up to date?: " + updatedTree.validate(machineTree));
 			
 			
 		}
@@ -209,7 +230,7 @@ public class Driver {
 	
 	public static void main(String[] args) throws IOException {
 		
-		//System.out.println("Test Run");
+//		System.out.println("Test Run");
 		
 //		testNodes();
 //		System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");

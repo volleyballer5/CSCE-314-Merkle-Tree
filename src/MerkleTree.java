@@ -69,7 +69,10 @@ public class MerkleTree extends BinaryTree{
 	//---------------------------------------------------------
 	public boolean validate(MerkleTree recent)
 	{
-		return this.root.hashValue.matches(recent.getRoot().hashValue);
+		if(this.root != null) {
+			return this.root.hashValue.equals(recent.getRoot().hashValue);
+		}
+		return false;
 	}
 	
 	//-------------------------------------------------------

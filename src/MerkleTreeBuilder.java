@@ -73,8 +73,8 @@ public class MerkleTreeBuilder {
         try {
         	reader = new BufferedReader(new FileReader(file));
             
-        	// for ignoring header uncomment if present
-        	// reader.readLine();
+        	// for ignoring header
+        	//reader.readLine();
         	
         	// parse file line by line
             while((line = reader.readLine()) != null) {
@@ -115,7 +115,7 @@ public class MerkleTreeBuilder {
         	hashedLines.add(new BinaryNode(duplicate.getLeft()));
         }
         
-        // return the final root hashed node
+        // return the final root hashed node by recursively hashing nodes together
         return new BinaryNode(hashHalf(hashedLines.subList(0, hashedLines.size() / 2)), hashHalf(hashedLines.subList(hashedLines.size() / 2, hashedLines.size())));
 	}
 	
