@@ -1,0 +1,1001 @@
+OrderDate,Region,Rep,Item,Units,Unit,Cost,Total
+06/3/2020,Central,Morgan,Pen Set,35,12.49,437.15000000000003
+05/10/2020,West,Parent,Desk,101,125,12625
+07/12/2021,West,Jardine,Pencil,63,0.99,62.37
+06/26/2021,Central,Jones,Pencil,59,0.99,58.41
+06/14/2020,East,Jardine,Pen,174,1.99,346.26
+11/17/2021,West,Jardine,Binder,49,4.99,244.51000000000002
+10/7/2021,Central,Kivell,Desk,219,125,27375
+03/26/2021,West,Kivell,Desk,157,125,19625
+06/5/2020,East,Morgan,Desk,80,125,10000
+09/25/2020,West,Thompson,Binder,151,4.99,753.49
+08/17/2020,East,Thompson,Desk,75,125,9375
+10/18/2021,East,Jones,Binder,182,4.99,908.1800000000001
+12/10/2021,West,Gill,Pen,105,1.99,208.95
+10/11/2020,West,Gill,Pencil,217,0.99,214.82999999999998
+12/7/2021,West,Smith,Pen,44,1.99,87.56
+03/23/2020,East,Smith,Pen,35,1.99,69.65
+07/20/2021,West,Jardine,Desk,41,125,5125
+09/21/2021,East,Smith,Pen,123,1.99,244.77
+03/11/2020,Central,Andrews,Pen,113,1.99,224.87
+01/15/2020,West,Kivell,Pencil,166,0.99,164.34
+10/25/2021,Central,Parent,Binder,253,4.99,1262.47
+06/9/2020,East,Andrews,Pen,143,1.99,284.57
+11/9/2020,West,Howard,Pencil,52,0.99,51.48
+08/22/2020,Central,Thompson,Desk,117,125,14625
+01/6/2021,Central,Thompson,Pencil,273,0.99,270.27
+01/29/2020,East,Jones,Pencil,45,0.99,44.55
+12/5/2020,Central,Kivell,Desk,276,125,34500
+08/9/2021,West,Howard,Pen,176,1.99,350.24
+01/29/2021,East,Thompson,Pen Set,139,12.49,1736.1100000000001
+03/25/2020,East,Parent,Desk,233,125,29125
+12/11/2021,Central,Gill,Desk,42,125,5250
+02/19/2021,West,Jones,Desk,39,125,4875
+04/1/2020,East,Andrews,Pen Set,200,12.49,2498.0
+03/3/2021,East,Howard,Binder,42,4.99,209.58
+08/14/2021,West,Gill,Pencil,31,0.99,30.69
+06/1/2020,East,Kivell,Pen Set,153,12.49,1910.97
+11/13/2021,West,Sorvino,Pencil,267,0.99,264.33
+04/9/2020,West,Andrews,Pencil,218,0.99,215.82
+12/19/2020,Central,Smith,Pencil,122,0.99,120.78
+09/26/2020,East,Gill,Binder,194,4.99,968.0600000000001
+01/24/2020,East,Kivell,Binder,142,4.99,708.58
+12/12/2021,West,Howard,Pen Set,272,12.49,3397.28
+06/24/2020,West,Sorvino,Pen,211,1.99,419.89
+08/24/2021,East,Jones,Pen,171,1.99,340.29
+11/19/2021,West,Smith,Pencil,151,0.99,149.49
+12/29/2020,Central,Jardine,Pen Set,191,12.49,2385.59
+09/23/2021,West,Morgan,Pen Set,46,12.49,574.54
+05/8/2021,Central,Howard,Desk,293,125,36625
+06/30/2020,West,Jones,Pen Set,126,12.49,1573.74
+12/2/2020,Central,Jones,Pencil,187,0.99,185.13
+04/29/2020,East,Andrews,Desk,210,125,26250
+06/10/2021,Central,Thompson,Binder,225,4.99,1122.75
+05/28/2020,Central,Thompson,Pen,14,1.99,27.86
+05/6/2021,West,Parent,Binder,120,4.99,598.8000000000001
+05/9/2020,East,Howard,Desk,66,125,8250
+03/10/2020,West,Gill,Desk,127,125,15875
+01/26/2020,Central,Morgan,Pen,195,1.99,388.05
+06/26/2020,Central,Thompson,Desk,261,125,32625
+02/11/2020,West,Sorvino,Binder,168,4.99,838.32
+03/13/2021,East,Thompson,Pencil,282,0.99,279.18
+03/12/2021,East,Sorvino,Binder,34,4.99,169.66
+09/20/2020,East,Parent,Pen,276,1.99,549.24
+01/18/2021,Central,Howard,Desk,132,125,16500
+01/12/2020,Central,Smith,Pen,293,1.99,583.07
+04/7/2021,East,Sorvino,Pen,144,1.99,286.56
+02/13/2020,Central,Gill,Pencil,99,0.99,98.01
+12/18/2020,West,Morgan,Pen,247,1.99,491.53
+03/21/2021,West,Howard,Pen Set,112,12.49,1398.88
+12/5/2021,Central,Howard,Pen Set,195,12.49,2435.55
+05/15/2020,West,Morgan,Pen,247,1.99,491.53
+01/23/2020,West,Andrews,Desk,248,125,31000
+06/18/2021,Central,Gill,Pen Set,11,12.49,137.39000000000001
+11/13/2020,West,Sorvino,Pen,272,1.99,541.28
+11/12/2021,Central,Parent,Pen,131,1.99,260.69
+06/14/2021,West,Jones,Pencil,227,0.99,224.73
+09/29/2020,Central,Morgan,Pen Set,97,12.49,1211.53
+04/13/2020,West,Thompson,Binder,196,4.99,978.0400000000001
+02/6/2021,West,Morgan,Pencil,212,0.99,209.88
+05/19/2021,West,Jones,Pen Set,31,12.49,387.19
+05/27/2020,West,Jones,Desk,130,125,16250
+04/19/2021,Central,Parent,Binder,210,4.99,1047.9
+09/10/2020,West,Smith,Pencil,147,0.99,145.53
+07/10/2020,Central,Jardine,Pencil,77,0.99,76.23
+06/30/2021,East,Smith,Pencil,176,0.99,174.24
+07/21/2020,East,Parent,Pen,281,1.99,559.1899999999999
+01/24/2020,East,Parent,Pencil,58,0.99,57.42
+07/24/2020,Central,Jones,Binder,25,4.99,124.75
+01/1/2021,Central,Gill,Binder,30,4.99,149.70000000000002
+01/13/2021,East,Sorvino,Binder,126,4.99,628.74
+04/26/2021,West,Thompson,Pen,113,1.99,224.87
+10/15/2021,West,Jones,Pen Set,296,12.49,3697.04
+08/1/2020,Central,Gill,Desk,223,125,27875
+01/5/2020,East,Jones,Pen,268,1.99,533.32
+07/3/2020,West,Morgan,Pen,167,1.99,332.33
+12/21/2020,Central,Gill,Pen Set,156,12.49,1948.44
+08/1/2020,Central,Smith,Pen Set,159,12.49,1985.91
+08/11/2021,Central,Morgan,Pen Set,96,12.49,1199.04
+06/29/2020,Central,Jones,Desk,231,125,28875
+09/27/2020,West,Morgan,Binder,277,4.99,1382.23
+07/16/2021,West,Jardine,Pen,16,1.99,31.84
+11/19/2020,Central,Morgan,Pencil,70,0.99,69.3
+05/11/2020,Central,Morgan,Pencil,249,0.99,246.51
+12/5/2021,Central,Howard,Binder,255,4.99,1272.45
+12/23/2021,Central,Howard,Pen,227,1.99,451.73
+06/25/2020,West,Andrews,Pen,175,1.99,348.25
+06/17/2021,West,Parent,Pen Set,45,12.49,562.05
+12/28/2021,Central,Jones,Desk,228,125,28500
+05/1/2021,East,Andrews,Pen Set,245,12.49,3060.05
+08/24/2021,Central,Jardine,Pen,249,1.99,495.51
+12/16/2020,West,Kivell,Binder,94,4.99,469.06
+06/10/2020,West,Smith,Pencil,177,0.99,175.23
+01/3/2020,Central,Morgan,Pencil,26,0.99,25.74
+03/13/2020,East,Andrews,Desk,239,125,29875
+07/28/2021,East,Jardine,Binder,161,4.99,803.39
+03/22/2020,Central,Kivell,Pen,28,1.99,55.72
+02/19/2020,Central,Andrews,Pen Set,166,12.49,2073.34
+02/24/2020,Central,Gill,Pen Set,110,12.49,1373.9
+05/30/2020,East,Sorvino,Pen,175,1.99,348.25
+03/27/2020,Central,Gill,Pencil,195,0.99,193.05
+04/28/2021,Central,Howard,Binder,168,4.99,838.32
+07/6/2020,Central,Howard,Pen Set,201,12.49,2510.4900000000002
+03/25/2020,West,Gill,Pen Set,235,12.49,2935.15
+01/19/2021,West,Thompson,Desk,38,125,4750
+06/1/2021,Central,Gill,Pen Set,83,12.49,1036.67
+11/30/2021,Central,Sorvino,Pencil,207,0.99,204.93
+06/19/2021,East,Gill,Pen Set,151,12.49,1885.99
+08/22/2021,Central,Gill,Pen Set,66,12.49,824.34
+06/7/2021,East,Jardine,Pen Set,55,12.49,686.95
+03/8/2021,East,Gill,Binder,219,4.99,1092.81
+10/29/2021,East,Sorvino,Pen,283,1.99,563.17
+07/10/2020,West,Jardine,Binder,247,4.99,1232.53
+01/15/2020,East,Sorvino,Pen,55,1.99,109.45
+01/23/2021,West,Jardine,Desk,110,125,13750
+02/21/2020,Central,Parent,Pen Set,259,12.49,3234.91
+12/17/2020,Central,Howard,Pen Set,124,12.49,1548.76
+09/6/2021,East,Jones,Binder,56,4.99,279.44
+01/8/2020,East,Morgan,Desk,281,125,35125
+07/9/2020,East,Jardine,Pen,173,1.99,344.27
+06/23/2021,Central,Kivell,Pen Set,30,12.49,374.7
+06/20/2021,East,Gill,Pencil,19,0.99,18.81
+02/12/2021,West,Sorvino,Desk,142,125,17750
+12/15/2021,Central,Thompson,Binder,28,4.99,139.72
+06/21/2020,Central,Gill,Pencil,266,0.99,263.34
+09/20/2020,East,Thompson,Desk,182,125,22750
+03/20/2021,Central,Jones,Pen Set,30,12.49,374.7
+05/20/2020,West,Jardine,Binder,34,4.99,169.66
+02/24/2020,West,Sorvino,Pen Set,156,12.49,1948.44
+12/20/2020,East,Thompson,Pen Set,229,12.49,2860.21
+06/4/2020,East,Sorvino,Pencil,300,0.99,297.0
+03/10/2021,West,Jones,Pencil,175,0.99,173.25
+08/11/2020,Central,Parent,Binder,122,4.99,608.78
+01/7/2020,East,Morgan,Pen,129,1.99,256.71
+06/2/2021,West,Parent,Binder,215,4.99,1072.8500000000001
+11/5/2021,East,Kivell,Pencil,202,0.99,199.98
+10/28/2021,East,Kivell,Pen,101,1.99,200.99
+05/8/2021,Central,Kivell,Pencil,66,0.99,65.34
+11/27/2020,West,Howard,Pencil,140,0.99,138.6
+02/11/2020,Central,Jardine,Pen,62,1.99,123.38
+07/30/2020,East,Howard,Desk,297,125,37125
+10/1/2021,East,Kivell,Binder,94,4.99,469.06
+07/14/2020,East,Morgan,Desk,186,125,23250
+01/31/2021,Central,Howard,Pen Set,11,12.49,137.39000000000001
+09/29/2021,East,Kivell,Pen,47,1.99,93.53
+03/11/2021,West,Smith,Pen,154,1.99,306.46
+11/14/2021,West,Howard,Pen,120,1.99,238.8
+06/6/2020,Central,Thompson,Pen,107,1.99,212.93
+11/12/2020,West,Morgan,Binder,195,4.99,973.0500000000001
+05/9/2020,West,Parent,Pen Set,196,12.49,2448.04
+09/29/2020,East,Gill,Binder,24,4.99,119.76
+04/19/2020,East,Jones,Binder,107,4.99,533.9300000000001
+10/22/2020,Central,Jones,Desk,254,125,31750
+04/25/2021,East,Kivell,Pen,208,1.99,413.92
+08/20/2020,East,Kivell,Pencil,223,0.99,220.77
+02/22/2020,Central,Andrews,Pencil,64,0.99,63.36
+08/19/2020,Central,Parent,Pen Set,273,12.49,3409.77
+12/14/2021,East,Gill,Pen Set,197,12.49,2460.53
+02/22/2021,East,Parent,Binder,119,4.99,593.8100000000001
+04/5/2020,East,Morgan,Desk,165,125,20625
+06/10/2021,Central,Sorvino,Pen,287,1.99,571.13
+07/4/2021,West,Smith,Binder,14,4.99,69.86
+09/28/2020,East,Smith,Pen,274,1.99,545.26
+09/12/2020,West,Andrews,Desk,284,125,35500
+05/28/2020,East,Kivell,Desk,225,125,28125
+09/6/2020,Central,Morgan,Binder,84,4.99,419.16
+08/9/2020,East,Sorvino,Pencil,58,0.99,57.42
+11/8/2021,West,Smith,Pencil,276,0.99,273.24
+01/7/2020,East,Smith,Pen Set,44,12.49,549.5600000000001
+12/24/2021,West,Thompson,Pen,153,1.99,304.46999999999997
+07/16/2020,West,Sorvino,Pencil,29,0.99,28.71
+05/17/2021,East,Thompson,Pencil,192,0.99,190.07999999999998
+10/2/2021,West,Kivell,Binder,211,4.99,1052.89
+12/8/2020,Central,Thompson,Binder,152,4.99,758.48
+02/22/2021,West,Parent,Pencil,133,0.99,131.67
+03/25/2021,East,Parent,Pen Set,105,12.49,1311.45
+03/29/2020,East,Morgan,Pen,156,1.99,310.44
+05/17/2020,East,Parent,Binder,293,4.99,1462.0700000000002
+10/24/2020,Central,Parent,Binder,175,4.99,873.25
+04/27/2020,West,Kivell,Pen Set,300,12.49,3747.0
+07/29/2021,East,Andrews,Pen,120,1.99,238.8
+12/13/2020,East,Sorvino,Pen Set,298,12.49,3722.02
+09/30/2021,East,Morgan,Binder,81,4.99,404.19
+05/26/2021,West,Gill,Pen Set,78,12.49,974.22
+07/4/2021,East,Kivell,Pen Set,262,12.49,3272.38
+06/22/2021,Central,Gill,Desk,27,125,3375
+08/8/2021,West,Jones,Desk,181,125,22625
+02/21/2020,East,Parent,Desk,293,125,36625
+07/28/2021,Central,Parent,Binder,165,4.99,823.35
+03/27/2021,Central,Kivell,Pen,63,1.99,125.37
+10/29/2021,Central,Howard,Desk,45,125,5625
+10/26/2020,Central,Thompson,Pencil,61,0.99,60.39
+06/19/2021,Central,Parent,Pen Set,276,12.49,3447.2400000000002
+03/9/2021,Central,Kivell,Pen,209,1.99,415.91
+07/12/2021,East,Morgan,Binder,191,4.99,953.09
+11/27/2021,West,Andrews,Binder,14,4.99,69.86
+06/11/2021,Central,Thompson,Pen,278,1.99,553.22
+08/8/2020,West,Gill,Desk,201,125,25125
+11/20/2020,West,Parent,Pen,21,1.99,41.79
+04/24/2020,East,Sorvino,Pencil,174,0.99,172.26
+11/25/2020,Central,Smith,Binder,104,4.99,518.96
+05/27/2021,East,Jardine,Binder,137,4.99,683.63
+08/7/2020,Central,Parent,Binder,4,4.99,19.96
+06/29/2021,Central,Kivell,Pencil,180,0.99,178.2
+10/30/2020,Central,Parent,Desk,112,125,14000
+07/18/2020,Central,Jones,Binder,289,4.99,1442.1100000000001
+01/8/2021,Central,Howard,Pencil,282,0.99,279.18
+11/11/2021,Central,Gill,Pencil,237,0.99,234.63
+03/6/2021,East,Jones,Binder,93,4.99,464.07
+06/30/2021,Central,Smith,Pen,20,1.99,39.8
+03/17/2020,West,Parent,Desk,32,125,4000
+02/16/2020,West,Smith,Pencil,158,0.99,156.42
+10/2/2020,Central,Kivell,Pen Set,48,12.49,599.52
+06/24/2020,West,Sorvino,Pen Set,130,12.49,1623.7
+10/16/2021,West,Jardine,Desk,255,125,31875
+05/12/2021,East,Morgan,Pencil,194,0.99,192.06
+01/22/2021,Central,Morgan,Pencil,7,0.99,6.93
+06/11/2021,East,Howard,Pen Set,178,12.49,2223.2200000000003
+09/1/2020,Central,Jones,Pen Set,208,12.49,2597.92
+04/24/2020,Central,Jardine,Pencil,255,0.99,252.45
+04/21/2021,East,Andrews,Desk,249,125,31125
+04/11/2021,West,Morgan,Desk,173,125,21625
+07/31/2020,Central,Morgan,Binder,279,4.99,1392.21
+08/18/2021,East,Howard,Pencil,24,0.99,23.759999999999998
+06/20/2021,East,Howard,Pen,227,1.99,451.73
+12/25/2020,West,Sorvino,Desk,286,125,35750
+07/29/2020,Central,Parent,Pen,69,1.99,137.31
+11/24/2020,East,Morgan,Pen,273,1.99,543.27
+09/28/2021,West,Parent,Pen Set,192,12.49,2398.08
+03/23/2020,West,Jones,Desk,39,125,4875
+12/24/2020,West,Jones,Binder,171,4.99,853.2900000000001
+08/25/2020,Central,Gill,Binder,226,4.99,1127.74
+05/6/2021,West,Andrews,Pen,276,1.99,549.24
+06/30/2021,Central,Thompson,Pen,137,1.99,272.63
+04/8/2020,Central,Andrews,Desk,122,125,15250
+05/4/2020,Central,Andrews,Desk,42,125,5250
+08/15/2020,West,Howard,Pen,266,1.99,529.34
+10/12/2020,Central,Sorvino,Pencil,21,0.99,20.79
+03/14/2021,Central,Morgan,Pen Set,92,12.49,1149.08
+07/27/2021,Central,Howard,Pen,77,1.99,153.23
+03/5/2020,West,Gill,Pen Set,124,12.49,1548.76
+06/11/2020,East,Sorvino,Binder,193,4.99,963.07
+09/23/2021,West,Jones,Pen Set,295,12.49,3684.55
+09/10/2020,West,Morgan,Pencil,138,0.99,136.62
+06/11/2021,West,Thompson,Pencil,215,0.99,212.85
+02/29/2020,Central,Howard,Binder,206,4.99,1027.94
+09/25/2021,Central,Morgan,Desk,175,125,21875
+10/31/2020,West,Thompson,Pencil,116,0.99,114.84
+06/26/2021,East,Smith,Pen,240,1.99,477.6
+10/24/2021,Central,Thompson,Pen,44,1.99,87.56
+05/31/2020,Central,Kivell,Pencil,123,0.99,121.77
+07/22/2021,Central,Howard,Desk,290,125,36250
+09/17/2021,Central,Smith,Pen,277,1.99,551.23
+02/12/2021,Central,Parent,Pencil,221,0.99,218.79
+05/18/2021,East,Sorvino,Pen,11,1.99,21.89
+08/3/2020,East,Sorvino,Binder,74,4.99,369.26
+10/12/2021,East,Kivell,Pen,162,1.99,322.38
+11/25/2021,East,Morgan,Pen,7,1.99,13.93
+02/4/2020,East,Andrews,Pencil,23,0.99,22.77
+03/6/2020,West,Morgan,Desk,41,125,5125
+02/9/2020,Central,Jones,Pencil,28,0.99,27.72
+07/11/2020,East,Kivell,Pen,60,1.99,119.4
+06/16/2021,Central,Thompson,Pen,48,1.99,95.52
+11/3/2021,West,Howard,Pencil,69,0.99,68.31
+12/14/2020,West,Thompson,Binder,282,4.99,1407.18
+06/8/2021,West,Smith,Pen,130,1.99,258.7
+05/25/2021,East,Thompson,Desk,46,125,5750
+05/23/2020,Central,Gill,Pencil,276,0.99,273.24
+08/31/2021,West,Howard,Desk,101,125,12625
+01/25/2021,West,Gill,Pencil,219,0.99,216.81
+06/23/2020,East,Jardine,Pen Set,262,12.49,3272.38
+09/7/2020,East,Howard,Pen,159,1.99,316.41
+10/15/2020,Central,Thompson,Pen,244,1.99,485.56
+01/1/2021,West,Parent,Pen,243,1.99,483.57
+05/22/2021,West,Jones,Pen Set,80,12.49,999.2
+04/19/2020,West,Jardine,Desk,90,125,11250
+11/22/2020,East,Kivell,Pen Set,236,12.49,2947.64
+05/10/2021,Central,Jones,Pencil,118,0.99,116.82
+05/31/2020,Central,Howard,Pen Set,190,12.49,2373.1
+04/27/2020,West,Kivell,Binder,250,4.99,1247.5
+10/16/2021,East,Morgan,Desk,279,125,34875
+12/9/2021,East,Gill,Desk,227,125,28375
+09/10/2021,Central,Sorvino,Pen,120,1.99,238.8
+09/15/2020,East,Gill,Pen,35,1.99,69.65
+10/20/2021,West,Thompson,Pen,34,1.99,67.66
+06/6/2020,East,Thompson,Desk,95,125,11875
+07/6/2021,West,Andrews,Desk,59,125,7375
+08/5/2021,Central,Howard,Pencil,32,0.99,31.68
+02/6/2021,East,Jardine,Pen Set,255,12.49,3184.9500000000003
+08/10/2020,Central,Howard,Pencil,187,0.99,185.13
+08/16/2021,Central,Sorvino,Pen,48,1.99,95.52
+11/22/2020,Central,Thompson,Desk,276,125,34500
+01/23/2021,West,Jardine,Binder,207,4.99,1032.93
+07/17/2020,Central,Howard,Pen Set,206,12.49,2572.94
+06/27/2020,East,Kivell,Pen Set,56,12.49,699.44
+03/21/2021,West,Andrews,Desk,15,125,1875
+11/27/2020,Central,Jardine,Pen,222,1.99,441.78
+06/4/2020,East,Parent,Pen Set,222,12.49,2772.78
+09/14/2021,Central,Morgan,Binder,25,4.99,124.75
+12/25/2021,West,Parent,Binder,12,4.99,59.88
+08/27/2021,East,Morgan,Pen,140,1.99,278.6
+11/12/2020,West,Sorvino,Pen,221,1.99,439.79
+10/18/2021,Central,Smith,Binder,125,4.99,623.75
+04/22/2020,West,Jardine,Pen Set,227,12.49,2835.23
+10/23/2021,East,Parent,Pencil,146,0.99,144.54
+12/14/2021,Central,Sorvino,Pen,281,1.99,559.1899999999999
+06/1/2020,Central,Jones,Pen,296,1.99,589.04
+06/2/2021,East,Smith,Pen,47,1.99,93.53
+11/18/2020,East,Thompson,Pen Set,300,12.49,3747.0
+05/12/2020,West,Jones,Pen Set,98,12.49,1224.02
+01/8/2020,East,Morgan,Pen,227,1.99,451.73
+10/9/2021,Central,Jones,Desk,122,125,15250
+05/25/2020,East,Sorvino,Pen Set,86,12.49,1074.14
+03/4/2020,West,Howard,Pen Set,225,12.49,2810.25
+08/4/2020,Central,Kivell,Pen,216,1.99,429.84
+09/30/2021,Central,Sorvino,Pencil,43,0.99,42.57
+08/30/2021,Central,Sorvino,Desk,257,125,32125
+01/7/2021,East,Howard,Pen,174,1.99,346.26
+04/30/2020,West,Morgan,Binder,106,4.99,528.94
+05/25/2021,East,Kivell,Pencil,203,0.99,200.97
+12/19/2020,Central,Jardine,Pencil,249,0.99,246.51
+12/9/2021,Central,Jones,Pen Set,263,12.49,3284.87
+04/18/2020,West,Thompson,Binder,35,4.99,174.65
+02/23/2021,Central,Jardine,Pen Set,26,12.49,324.74
+09/14/2021,West,Thompson,Pen,229,1.99,455.71
+10/26/2021,West,Sorvino,Desk,114,125,14250
+03/5/2021,West,Howard,Desk,211,125,26375
+01/8/2021,East,Jones,Binder,270,4.99,1347.3
+03/9/2021,East,Gill,Pen,212,1.99,421.88
+10/20/2020,East,Jones,Pen Set,251,12.49,3134.9900000000002
+11/14/2020,East,Jones,Binder,140,4.99,698.6
+01/13/2020,West,Jardine,Pencil,49,0.99,48.51
+03/19/2021,Central,Andrews,Pencil,89,0.99,88.11
+05/17/2021,Central,Morgan,Binder,203,4.99,1012.97
+05/24/2020,Central,Sorvino,Desk,186,125,23250
+05/8/2020,Central,Gill,Binder,182,4.99,908.1800000000001
+08/23/2020,East,Sorvino,Binder,21,4.99,104.79
+09/9/2020,East,Howard,Binder,101,4.99,503.99
+04/25/2021,Central,Smith,Pen,250,1.99,497.5
+11/18/2020,Central,Thompson,Pencil,68,0.99,67.32
+11/27/2020,Central,Thompson,Pen,179,1.99,356.21
+08/16/2020,Central,Smith,Pencil,253,0.99,250.47
+08/17/2020,West,Jones,Pencil,130,0.99,128.7
+01/27/2021,East,Jones,Pen Set,125,12.49,1561.25
+04/28/2020,West,Morgan,Desk,234,125,29250
+03/24/2020,East,Morgan,Desk,59,125,7375
+05/24/2020,West,Parent,Desk,259,125,32375
+10/29/2021,East,Gill,Desk,34,125,4250
+03/17/2021,East,Jardine,Pen Set,193,12.49,2410.57
+01/23/2020,East,Sorvino,Pen,40,1.99,79.6
+08/20/2021,Central,Gill,Pen,230,1.99,457.7
+02/13/2021,East,Parent,Pencil,188,0.99,186.12
+09/25/2021,East,Sorvino,Pen,153,1.99,304.46999999999997
+10/3/2020,West,Kivell,Pen Set,73,12.49,911.77
+11/12/2021,Central,Morgan,Pen Set,4,12.49,49.96
+01/30/2021,East,Sorvino,Pen Set,114,12.49,1423.8600000000001
+06/27/2021,Central,Sorvino,Desk,65,125,8125
+01/16/2021,Central,Kivell,Desk,170,125,21250
+02/4/2020,West,Kivell,Pen,8,1.99,15.92
+10/27/2020,East,Andrews,Pen,108,1.99,214.92
+08/12/2020,Central,Sorvino,Binder,190,4.99,948.1
+11/18/2021,Central,Morgan,Pencil,239,0.99,236.60999999999999
+08/1/2021,Central,Kivell,Pen Set,146,12.49,1823.54
+01/3/2020,Central,Smith,Pen Set,229,12.49,2860.21
+05/18/2020,West,Howard,Binder,4,4.99,19.96
+02/22/2021,Central,Jones,Pen,16,1.99,31.84
+05/10/2021,East,Jones,Pencil,220,0.99,217.8
+06/25/2021,East,Sorvino,Desk,291,125,36375
+10/12/2020,East,Smith,Binder,141,4.99,703.59
+09/6/2021,West,Kivell,Desk,80,125,10000
+07/23/2021,East,Jones,Binder,227,4.99,1132.73
+07/14/2020,Central,Morgan,Pen Set,27,12.49,337.23
+02/15/2020,West,Sorvino,Pen Set,151,12.49,1885.99
+12/19/2020,West,Gill,Pen,230,1.99,457.7
+11/4/2020,Central,Thompson,Pen Set,169,12.49,2110.81
+06/8/2020,West,Sorvino,Pen,45,1.99,89.55
+05/27/2020,East,Sorvino,Pen,184,1.99,366.16
+12/25/2020,Central,Sorvino,Pen Set,80,12.49,999.2
+11/17/2021,West,Jardine,Pencil,226,0.99,223.74
+06/14/2020,Central,Andrews,Pen,229,1.99,455.71
+03/19/2021,West,Morgan,Binder,288,4.99,1437.1200000000001
+01/16/2021,East,Jones,Pen Set,137,12.49,1711.13
+06/10/2021,West,Jardine,Binder,14,4.99,69.86
+09/5/2020,East,Jones,Pen,148,1.99,294.52
+11/18/2020,East,Howard,Binder,268,4.99,1337.3200000000002
+06/7/2020,Central,Howard,Pen Set,236,12.49,2947.64
+02/6/2020,Central,Andrews,Pen,139,1.99,276.61
+12/20/2020,Central,Morgan,Binder,256,4.99,1277.44
+06/1/2021,West,Morgan,Binder,25,4.99,124.75
+08/16/2021,West,Jones,Desk,44,125,5500
+09/18/2021,Central,Howard,Pen,139,1.99,276.61
+02/15/2020,West,Thompson,Desk,57,125,7125
+02/3/2020,West,Kivell,Pen,37,1.99,73.63
+08/29/2020,West,Jardine,Desk,262,125,32750
+09/24/2021,Central,Morgan,Binder,25,4.99,124.75
+10/6/2020,West,Thompson,Pencil,21,0.99,20.79
+02/5/2020,Central,Andrews,Pen,299,1.99,595.01
+03/23/2021,East,Jardine,Pencil,21,0.99,20.79
+06/26/2020,West,Jardine,Pen Set,12,12.49,149.88
+11/5/2021,Central,Howard,Binder,154,4.99,768.46
+02/12/2020,West,Sorvino,Pen,228,1.99,453.71999999999997
+10/3/2021,Central,Parent,Pen Set,293,12.49,3659.57
+04/17/2020,Central,Kivell,Pencil,49,0.99,48.51
+03/8/2021,Central,Sorvino,Pen,292,1.99,581.08
+03/23/2021,Central,Kivell,Desk,148,125,18500
+09/24/2020,West,Smith,Desk,140,125,17500
+03/18/2021,East,Parent,Pen,250,1.99,497.5
+08/15/2020,Central,Thompson,Pencil,72,0.99,71.28
+02/11/2020,Central,Kivell,Pencil,180,0.99,178.2
+07/6/2020,West,Thompson,Binder,119,4.99,593.8100000000001
+09/22/2021,East,Parent,Pen Set,62,12.49,774.38
+02/11/2021,East,Sorvino,Pencil,20,0.99,19.8
+05/24/2020,Central,Jardine,Pen,262,1.99,521.38
+10/9/2021,West,Jardine,Binder,170,4.99,848.3000000000001
+10/7/2021,Central,Parent,Desk,79,125,9875
+11/8/2020,East,Parent,Pen Set,270,12.49,3372.3
+01/23/2020,East,Andrews,Pen Set,208,12.49,2597.92
+11/25/2021,West,Howard,Desk,79,125,9875
+01/26/2020,West,Andrews,Desk,117,125,14625
+04/25/2020,West,Thompson,Desk,44,125,5500
+07/23/2020,Central,Thompson,Desk,82,125,10250
+08/14/2020,West,Jardine,Pencil,248,0.99,245.52
+03/13/2020,East,Jones,Pencil,101,0.99,99.99
+10/26/2021,West,Gill,Pencil,32,0.99,31.68
+09/24/2020,Central,Kivell,Pen,229,1.99,455.71
+02/13/2020,Central,Kivell,Pen Set,250,12.49,3122.5
+01/28/2020,East,Smith,Binder,123,4.99,613.77
+12/1/2021,East,Morgan,Pen,115,1.99,228.85
+11/6/2020,Central,Andrews,Pencil,26,0.99,25.74
+05/25/2020,East,Andrews,Pen,262,1.99,521.38
+11/12/2020,West,Sorvino,Binder,209,4.99,1042.91
+06/17/2021,West,Kivell,Pencil,157,0.99,155.43
+01/24/2021,Central,Kivell,Desk,187,125,23375
+07/9/2020,East,Gill,Pen Set,233,12.49,2910.17
+10/14/2021,Central,Kivell,Pencil,143,0.99,141.57
+05/16/2020,Central,Kivell,Pen,140,1.99,278.6
+01/4/2020,West,Parent,Pencil,171,0.99,169.29
+12/22/2020,Central,Morgan,Pen,30,1.99,59.7
+01/4/2021,Central,Gill,Pen Set,163,12.49,2035.8700000000001
+04/30/2020,West,Morgan,Pen,272,1.99,541.28
+03/22/2021,East,Sorvino,Desk,95,125,11875
+07/16/2021,West,Jardine,Pen Set,282,12.49,3522.18
+12/30/2021,West,Gill,Binder,56,4.99,279.44
+09/8/2020,Central,Howard,Pen,112,1.99,222.88
+10/29/2020,East,Jones,Desk,186,125,23250
+10/14/2020,West,Jardine,Pencil,99,0.99,98.01
+06/15/2021,Central,Jardine,Pen Set,118,12.49,1473.82
+02/19/2021,Central,Kivell,Desk,99,125,12375
+05/3/2021,East,Gill,Pen,67,1.99,133.33
+09/20/2020,Central,Kivell,Pen,253,1.99,503.46999999999997
+02/5/2020,Central,Jones,Binder,281,4.99,1402.19
+05/11/2021,East,Morgan,Pen,55,1.99,109.45
+11/4/2020,East,Jardine,Binder,111,4.99,553.89
+10/4/2020,Central,Jones,Binder,119,4.99,593.8100000000001
+04/10/2020,West,Jardine,Pen,15,1.99,29.85
+10/5/2020,West,Howard,Binder,79,4.99,394.21000000000004
+11/18/2021,Central,Parent,Desk,274,125,34250
+09/11/2020,East,Jardine,Pen Set,24,12.49,299.76
+10/25/2020,East,Parent,Desk,210,125,26250
+03/19/2020,West,Gill,Pen Set,124,12.49,1548.76
+03/5/2020,West,Parent,Desk,71,125,8875
+06/3/2021,East,Jardine,Desk,211,125,26375
+03/20/2020,Central,Howard,Desk,247,125,30875
+09/19/2021,East,Smith,Pen,107,1.99,212.93
+09/18/2021,Central,Morgan,Pencil,46,0.99,45.54
+10/13/2021,East,Howard,Pen Set,44,12.49,549.5600000000001
+03/21/2021,East,Gill,Pen,167,1.99,332.33
+05/21/2020,West,Kivell,Binder,35,4.99,174.65
+03/21/2020,East,Parent,Pen Set,60,12.49,749.4
+05/21/2021,Central,Gill,Desk,67,125,8375
+09/11/2020,Central,Sorvino,Binder,241,4.99,1202.5900000000001
+09/1/2020,West,Sorvino,Desk,233,125,29125
+11/30/2020,West,Howard,Pencil,186,0.99,184.14
+10/23/2021,East,Parent,Pencil,284,0.99,281.16
+05/9/2020,West,Sorvino,Pencil,48,0.99,47.519999999999996
+07/9/2021,Central,Sorvino,Pen,128,1.99,254.72
+07/1/2021,Central,Sorvino,Desk,13,125,1625
+02/3/2020,West,Morgan,Binder,168,4.99,838.32
+03/19/2020,Central,Sorvino,Pen,43,1.99,85.57
+02/26/2021,East,Smith,Pen Set,123,12.49,1536.27
+05/23/2020,Central,Morgan,Pen Set,33,12.49,412.17
+11/8/2021,West,Kivell,Pencil,61,0.99,60.39
+01/14/2020,West,Gill,Pencil,87,0.99,86.13
+10/23/2020,West,Smith,Pencil,16,0.99,15.84
+08/9/2020,Central,Jardine,Desk,242,125,30250
+07/30/2020,West,Howard,Desk,46,125,5750
+12/25/2021,East,Andrews,Desk,264,125,33000
+10/15/2020,East,Parent,Pen Set,211,12.49,2635.39
+04/5/2020,East,Parent,Pen,233,1.99,463.67
+03/15/2020,Central,Kivell,Pencil,179,0.99,177.21
+04/13/2021,East,Morgan,Desk,84,125,10500
+04/16/2020,East,Gill,Binder,132,4.99,658.6800000000001
+08/1/2020,West,Jardine,Pen Set,13,12.49,162.37
+01/10/2020,Central,Sorvino,Pencil,251,0.99,248.49
+10/22/2021,Central,Parent,Pen Set,215,12.49,2685.35
+02/10/2021,East,Kivell,Pencil,272,0.99,269.28
+02/7/2020,East,Andrews,Binder,273,4.99,1362.27
+01/11/2020,Central,Smith,Desk,230,125,28750
+03/5/2021,Central,Howard,Binder,232,4.99,1157.68
+02/14/2020,West,Smith,Pencil,77,0.99,76.23
+05/15/2021,East,Parent,Pen,238,1.99,473.62
+08/2/2021,West,Parent,Desk,162,125,20250
+09/16/2021,East,Andrews,Pen,197,1.99,392.03
+07/13/2021,West,Gill,Pen,30,1.99,59.7
+08/31/2020,East,Jardine,Pen,238,1.99,473.62
+12/2/2020,West,Kivell,Pen Set,142,12.49,1773.58
+05/24/2021,West,Morgan,Pen,127,1.99,252.73
+05/1/2020,West,Parent,Pencil,113,0.99,111.87
+03/5/2021,West,Parent,Pen Set,153,12.49,1910.97
+01/15/2020,West,Gill,Desk,202,125,25250
+11/18/2021,West,Thompson,Pen,29,1.99,57.71
+07/2/2021,East,Jardine,Desk,300,125,37500
+09/29/2021,East,Smith,Pen,247,1.99,491.53
+06/3/2021,Central,Gill,Pencil,24,0.99,23.759999999999998
+06/23/2021,West,Andrews,Pencil,58,0.99,57.42
+12/3/2021,East,Morgan,Binder,243,4.99,1212.5700000000002
+09/12/2020,East,Parent,Pen Set,76,12.49,949.24
+07/15/2020,Central,Jardine,Binder,136,4.99,678.64
+06/26/2020,East,Gill,Pen Set,98,12.49,1224.02
+04/3/2020,West,Jardine,Desk,75,125,9375
+06/2/2021,Central,Andrews,Desk,289,125,36125
+02/21/2021,East,Kivell,Pen Set,217,12.49,2710.33
+10/3/2020,West,Gill,Pen Set,293,12.49,3659.57
+12/22/2021,Central,Morgan,Pen Set,161,12.49,2010.89
+09/5/2020,West,Jardine,Binder,72,4.99,359.28000000000003
+09/12/2021,Central,Sorvino,Desk,149,125,18625
+09/22/2021,West,Parent,Pen Set,285,12.49,3559.65
+02/3/2021,East,Thompson,Binder,71,4.99,354.29
+10/23/2020,West,Thompson,Pen Set,232,12.49,2897.68
+08/15/2021,West,Sorvino,Binder,109,4.99,543.91
+05/19/2020,East,Kivell,Pencil,233,0.99,230.67
+02/15/2020,East,Andrews,Desk,259,125,32375
+08/19/2020,Central,Andrews,Desk,84,125,10500
+09/18/2020,West,Parent,Desk,32,125,4000
+11/24/2021,West,Jones,Pen,245,1.99,487.55
+12/11/2020,Central,Kivell,Pen,104,1.99,206.96
+11/15/2021,East,Andrews,Pen Set,74,12.49,924.26
+10/31/2020,Central,Jones,Binder,57,4.99,284.43
+10/5/2020,West,Gill,Pen Set,75,12.49,936.75
+03/25/2020,West,Jardine,Pencil,234,0.99,231.66
+02/8/2020,Central,Parent,Desk,23,125,2875
+02/5/2021,West,Morgan,Pencil,220,0.99,217.8
+01/2/2021,East,Andrews,Binder,86,4.99,429.14000000000004
+07/30/2021,Central,Kivell,Binder,77,4.99,384.23
+05/11/2020,Central,Sorvino,Pencil,260,0.99,257.4
+02/17/2021,Central,Jones,Pen,2,1.99,3.98
+05/6/2021,Central,Gill,Pencil,103,0.99,101.97
+01/28/2021,Central,Smith,Desk,19,125,2375
+01/1/2020,East,Smith,Pencil,273,0.99,270.27
+09/22/2020,Central,Jones,Desk,268,125,33500
+07/21/2021,West,Howard,Desk,186,125,23250
+11/23/2020,West,Jardine,Pen,142,1.99,282.58
+03/28/2020,West,Kivell,Desk,247,125,30875
+04/2/2021,East,Andrews,Pencil,72,0.99,71.28
+10/28/2021,Central,Howard,Binder,132,4.99,658.6800000000001
+07/16/2021,Central,Kivell,Desk,176,125,22000
+03/25/2020,Central,Howard,Pen,163,1.99,324.37
+12/10/2020,East,Morgan,Pencil,40,0.99,39.6
+07/12/2020,East,Andrews,Desk,73,125,9125
+10/20/2020,West,Morgan,Pen,145,1.99,288.55
+06/2/2020,Central,Kivell,Pencil,26,0.99,25.74
+12/9/2020,West,Gill,Pencil,38,0.99,37.62
+12/30/2021,West,Morgan,Pencil,227,0.99,224.73
+10/23/2021,East,Jardine,Desk,191,125,23875
+08/9/2020,West,Gill,Desk,87,125,10875
+02/21/2021,Central,Smith,Pencil,137,0.99,135.63
+06/14/2020,West,Howard,Pencil,56,0.99,55.44
+01/3/2021,Central,Howard,Pencil,56,0.99,55.44
+03/28/2021,West,Andrews,Desk,253,125,31625
+10/12/2021,Central,Sorvino,Binder,262,4.99,1307.38
+04/11/2020,West,Gill,Binder,209,4.99,1042.91
+12/6/2020,East,Morgan,Desk,216,125,27000
+09/22/2020,Central,Kivell,Pen Set,83,12.49,1036.67
+04/13/2021,Central,Jardine,Binder,213,4.99,1062.8700000000001
+03/8/2021,Central,Jardine,Pen Set,202,12.49,2522.98
+02/11/2021,East,Jones,Pen,125,1.99,248.75
+03/23/2020,West,Thompson,Desk,282,125,35250
+11/11/2020,East,Howard,Binder,270,4.99,1347.3
+10/8/2021,Central,Howard,Pen,217,1.99,431.83
+07/18/2021,East,Thompson,Pencil,101,0.99,99.99
+11/3/2021,East,Parent,Desk,114,125,14250
+06/20/2021,Central,Jones,Binder,156,4.99,778.44
+09/12/2020,Central,Parent,Binder,34,4.99,169.66
+08/9/2020,Central,Jones,Pen,237,1.99,471.63
+12/26/2020,East,Kivell,Pen,13,1.99,25.87
+07/1/2021,East,Jones,Pen,185,1.99,368.15
+09/6/2020,East,Jones,Binder,229,4.99,1142.71
+05/12/2021,Central,Howard,Desk,143,125,17875
+10/10/2020,West,Jardine,Pencil,197,0.99,195.03
+01/19/2020,West,Parent,Pencil,218,0.99,215.82
+02/10/2020,West,Jones,Pen Set,48,12.49,599.52
+11/19/2020,East,Thompson,Pencil,38,0.99,37.62
+12/31/2021,East,Howard,Pen Set,97,12.49,1211.53
+07/18/2020,Central,Morgan,Binder,61,4.99,304.39
+09/26/2020,Central,Jones,Pencil,276,0.99,273.24
+12/14/2020,West,Gill,Pencil,296,0.99,293.04
+01/27/2020,West,Morgan,Pen,119,1.99,236.81
+05/10/2021,Central,Sorvino,Pencil,287,0.99,284.13
+08/21/2020,East,Jones,Desk,127,125,15875
+01/7/2020,West,Sorvino,Desk,152,125,19000
+09/12/2021,Central,Andrews,Binder,137,4.99,683.63
+09/24/2020,East,Morgan,Desk,104,125,13000
+08/27/2021,Central,Andrews,Pencil,57,0.99,56.43
+01/10/2020,East,Kivell,Pen,103,1.99,204.97
+04/23/2021,West,Parent,Desk,104,125,13000
+07/30/2021,Central,Thompson,Pencil,38,0.99,37.62
+01/11/2021,East,Morgan,Pen Set,130,12.49,1623.7
+11/28/2020,Central,Gill,Pencil,265,0.99,262.35
+08/5/2020,West,Andrews,Pencil,119,0.99,117.81
+05/3/2020,West,Sorvino,Pen Set,107,12.49,1336.43
+03/25/2020,West,Jardine,Pen,178,1.99,354.21999999999997
+04/15/2020,East,Parent,Desk,12,125,1500
+08/3/2021,West,Kivell,Pen Set,230,12.49,2872.7000000000003
+09/9/2021,Central,Jardine,Binder,83,4.99,414.17
+04/15/2020,West,Morgan,Pen,232,1.99,461.68
+02/16/2021,East,Sorvino,Desk,285,125,35625
+03/7/2021,West,Kivell,Pen Set,263,12.49,3284.87
+05/10/2020,East,Andrews,Binder,228,4.99,1137.72
+02/14/2020,East,Morgan,Desk,236,125,29500
+06/10/2020,West,Andrews,Binder,171,4.99,853.2900000000001
+08/27/2021,East,Jones,Pen Set,152,12.49,1898.48
+05/30/2021,West,Howard,Pen Set,246,12.49,3072.54
+11/22/2021,Central,Thompson,Pen Set,102,12.49,1273.98
+11/21/2020,Central,Jardine,Pen Set,192,12.49,2398.08
+07/25/2021,East,Jones,Desk,71,125,8875
+04/15/2020,East,Andrews,Pen,174,1.99,346.26
+04/28/2020,West,Jones,Pen,135,1.99,268.65
+05/11/2021,West,Kivell,Binder,215,4.99,1072.8500000000001
+06/18/2021,East,Kivell,Pen Set,284,12.49,3547.16
+01/10/2021,Central,Andrews,Desk,212,125,26500
+01/30/2020,Central,Sorvino,Pen Set,138,12.49,1723.6200000000001
+04/4/2021,Central,Thompson,Binder,40,4.99,199.60000000000002
+09/15/2021,Central,Andrews,Desk,253,125,31625
+11/4/2020,Central,Jones,Binder,265,4.99,1322.3500000000001
+04/23/2021,West,Morgan,Pen Set,1,12.49,12.49
+08/24/2021,East,Parent,Pen Set,159,12.49,1985.91
+07/31/2021,Central,Jones,Pencil,77,0.99,76.23
+11/16/2021,East,Morgan,Pen Set,285,12.49,3559.65
+08/16/2020,East,Jardine,Binder,19,4.99,94.81
+05/13/2021,West,Morgan,Pen Set,226,12.49,2822.7400000000002
+08/12/2020,Central,Andrews,Pen Set,132,12.49,1648.68
+03/17/2021,West,Morgan,Pencil,100,0.99,99.0
+11/10/2021,West,Parent,Desk,72,125,9000
+07/7/2021,West,Jones,Desk,23,125,2875
+03/16/2020,East,Andrews,Pen Set,287,12.49,3584.63
+09/1/2021,East,Kivell,Pencil,16,0.99,15.84
+11/18/2021,Central,Jardine,Pen Set,144,12.49,1798.56
+02/17/2020,East,Jardine,Pen Set,240,12.49,2997.6
+12/22/2020,West,Howard,Binder,126,4.99,628.74
+05/28/2021,West,Jardine,Desk,259,125,32375
+01/22/2021,West,Sorvino,Pencil,169,0.99,167.31
+04/8/2021,Central,Thompson,Desk,267,125,33375
+09/20/2020,West,Thompson,Desk,143,125,17875
+01/9/2021,West,Sorvino,Binder,257,4.99,1282.43
+05/18/2021,West,Andrews,Pen Set,65,12.49,811.85
+01/6/2021,East,Jones,Pen Set,169,12.49,2110.81
+05/18/2020,Central,Parent,Pen Set,25,12.49,312.25
+10/11/2021,East,Thompson,Pencil,292,0.99,289.08
+11/9/2021,West,Sorvino,Pen Set,292,12.49,3647.08
+09/18/2020,Central,Sorvino,Desk,126,125,15750
+04/4/2020,East,Andrews,Pen,203,1.99,403.96999999999997
+06/18/2021,West,Gill,Binder,251,4.99,1252.49
+01/17/2021,West,Howard,Binder,200,4.99,998.0
+05/12/2021,West,Jones,Pencil,113,0.99,111.87
+04/1/2020,East,Morgan,Binder,244,4.99,1217.56
+01/19/2020,East,Kivell,Pencil,126,0.99,124.74
+02/26/2020,East,Jones,Pencil,109,0.99,107.91
+12/10/2020,Central,Sorvino,Desk,84,125,10500
+03/11/2020,West,Sorvino,Desk,15,125,1875
+01/26/2020,East,Jardine,Pen,7,1.99,13.93
+05/22/2021,Central,Andrews,Pencil,204,0.99,201.96
+04/23/2020,West,Smith,Binder,123,4.99,613.77
+01/15/2020,Central,Jones,Desk,261,125,32625
+03/4/2020,Central,Sorvino,Pencil,207,0.99,204.93
+09/25/2021,Central,Morgan,Desk,108,125,13500
+05/24/2020,Central,Jones,Pen Set,76,12.49,949.24
+03/14/2021,Central,Sorvino,Desk,262,125,32750
+11/17/2021,Central,Andrews,Pen Set,206,12.49,2572.94
+11/26/2021,East,Jones,Pen,50,1.99,99.5
+12/15/2020,Central,Gill,Binder,157,4.99,783.4300000000001
+02/24/2021,West,Morgan,Binder,292,4.99,1457.0800000000002
+04/14/2020,Central,Sorvino,Binder,58,4.99,289.42
+01/4/2021,West,Gill,Binder,268,4.99,1337.3200000000002
+12/15/2020,Central,Sorvino,Pen Set,126,12.49,1573.74
+09/1/2021,West,Sorvino,Pen Set,153,12.49,1910.97
+05/26/2020,East,Smith,Binder,159,4.99,793.4100000000001
+05/25/2021,Central,Thompson,Pencil,255,0.99,252.45
+10/10/2020,Central,Kivell,Pen Set,250,12.49,3122.5
+10/28/2021,West,Howard,Desk,160,125,20000
+08/31/2021,West,Morgan,Binder,8,4.99,39.92
+06/5/2020,East,Jones,Binder,285,4.99,1422.15
+08/17/2020,West,Thompson,Binder,36,4.99,179.64000000000001
+11/29/2021,West,Gill,Pen,8,1.99,15.92
+01/6/2021,Central,Morgan,Desk,89,125,11125
+07/18/2020,West,Thompson,Pen Set,81,12.49,1011.69
+07/8/2021,East,Thompson,Pencil,103,0.99,101.97
+08/31/2021,East,Jones,Desk,231,125,28875
+01/24/2021,Central,Morgan,Binder,261,4.99,1302.39
+11/17/2021,East,Sorvino,Pencil,52,0.99,51.48
+10/28/2020,East,Smith,Binder,152,4.99,758.48
+11/19/2021,West,Andrews,Pen Set,115,12.49,1436.3500000000001
+05/6/2021,East,Morgan,Pen Set,59,12.49,736.91
+06/22/2021,Central,Jardine,Pencil,112,0.99,110.88
+02/4/2020,Central,Thompson,Pencil,141,0.99,139.59
+08/11/2021,East,Thompson,Pen,257,1.99,511.43
+05/28/2021,East,Kivell,Pen,257,1.99,511.43
+08/21/2020,East,Parent,Pen,78,1.99,155.22
+06/24/2021,East,Kivell,Pencil,199,0.99,197.01
+04/25/2021,West,Jones,Pen Set,239,12.49,2985.11
+07/27/2021,East,Jones,Pen Set,143,12.49,1786.07
+08/28/2020,West,Smith,Pen Set,253,12.49,3159.9700000000003
+11/16/2021,Central,Gill,Pen,135,1.99,268.65
+01/29/2020,East,Thompson,Desk,297,125,37125
+05/21/2020,Central,Morgan,Pencil,59,0.99,58.41
+03/16/2021,West,Jardine,Pen Set,273,12.49,3409.77
+05/11/2020,East,Sorvino,Pen,177,1.99,352.23
+03/9/2020,West,Kivell,Pen,126,1.99,250.74
+03/6/2020,East,Gill,Binder,53,4.99,264.47
+12/9/2021,East,Thompson,Pen Set,226,12.49,2822.7400000000002
+10/5/2021,Central,Jones,Binder,279,4.99,1392.21
+01/12/2020,Central,Kivell,Pen,146,1.99,290.54
+02/27/2020,West,Kivell,Pen,120,1.99,238.8
+07/22/2020,Central,Gill,Pencil,221,0.99,218.79
+12/14/2020,East,Morgan,Pen Set,118,12.49,1473.82
+11/1/2021,Central,Andrews,Binder,144,4.99,718.5600000000001
+04/4/2021,West,Jones,Pen Set,221,12.49,2760.29
+06/9/2021,West,Sorvino,Pen Set,48,12.49,599.52
+01/22/2021,East,Howard,Pen,152,1.99,302.48
+01/8/2020,West,Andrews,Pen,36,1.99,71.64
+06/4/2020,West,Jardine,Pen Set,198,12.49,2473.02
+10/5/2021,Central,Andrews,Pencil,61,0.99,60.39
+01/24/2021,Central,Gill,Pen Set,284,12.49,3547.16
+09/2/2020,Central,Parent,Desk,289,125,36125
+07/7/2020,West,Kivell,Binder,271,4.99,1352.29
+12/1/2021,West,Gill,Desk,41,125,5125
+04/16/2020,West,Parent,Binder,119,4.99,593.8100000000001
+03/23/2021,Central,Andrews,Pen,203,1.99,403.96999999999997
+03/28/2020,East,Andrews,Pencil,240,0.99,237.6
+06/16/2020,East,Parent,Pen,270,1.99,537.3
+11/24/2021,East,Jones,Pen,139,1.99,276.61
+07/12/2021,East,Thompson,Pen,138,1.99,274.62
+05/24/2021,Central,Jones,Binder,129,4.99,643.71
+10/15/2021,East,Jones,Pen Set,143,12.49,1786.07
+11/1/2021,West,Parent,Desk,258,125,32250
+07/29/2020,West,Parent,Pencil,119,0.99,117.81
+10/4/2021,Central,Morgan,Pen,228,1.99,453.71999999999997
+09/6/2020,West,Jardine,Desk,262,125,32750
+10/24/2020,Central,Smith,Pen Set,210,12.49,2622.9
+04/2/2020,East,Smith,Pen,231,1.99,459.69
+04/19/2021,West,Sorvino,Pen,184,1.99,366.16
+05/5/2020,West,Kivell,Pen Set,200,12.49,2498.0
+10/14/2021,East,Howard,Desk,19,125,2375
+02/17/2020,East,Gill,Pencil,217,0.99,214.82999999999998
+03/7/2021,West,Morgan,Binder,281,4.99,1402.19
+05/19/2020,West,Gill,Desk,111,125,13875
+11/21/2021,West,Thompson,Pencil,138,0.99,136.62
+02/3/2020,East,Jardine,Pen,105,1.99,208.95
+03/17/2020,Central,Jones,Pen Set,173,12.49,2160.77
+12/17/2020,East,Smith,Pen Set,42,12.49,524.58
+02/13/2021,Central,Jardine,Pen,7,1.99,13.93
+08/5/2021,East,Andrews,Pencil,1,0.99,0.99
+06/11/2020,Central,Parent,Desk,161,125,20125
+02/5/2021,West,Smith,Desk,98,125,12250
+12/5/2020,East,Parent,Desk,51,125,6375
+03/12/2021,West,Jardine,Pencil,229,0.99,226.71
+09/2/2021,West,Parent,Desk,281,125,35125
+01/24/2021,Central,Morgan,Pencil,9,0.99,8.91
+02/10/2021,East,Parent,Pen Set,102,12.49,1273.98
+05/18/2021,East,Thompson,Pen,79,1.99,157.21
+06/20/2021,West,Smith,Desk,221,125,27625
+06/21/2021,East,Thompson,Pencil,39,0.99,38.61
+10/16/2020,Central,Sorvino,Pen Set,61,12.49,761.89
+04/27/2020,Central,Gill,Binder,50,4.99,249.5
+05/28/2020,East,Morgan,Pen,180,1.99,358.2
+01/20/2020,East,Thompson,Pencil,219,0.99,216.81
+03/9/2020,West,Howard,Pen Set,115,12.49,1436.3500000000001
+03/16/2021,West,Jardine,Desk,9,125,1125
+06/27/2020,Central,Jardine,Pen Set,114,12.49,1423.8600000000001
+11/20/2021,East,Kivell,Pen,98,1.99,195.02
+08/15/2020,Central,Andrews,Pen,195,1.99,388.05
+07/24/2020,East,Howard,Binder,106,4.99,528.94
+06/30/2020,West,Smith,Pen Set,190,12.49,2373.1
+03/8/2020,West,Gill,Desk,251,125,31375
+04/23/2021,Central,Howard,Desk,140,125,17500
+09/13/2020,East,Jones,Pen,230,1.99,457.7
+02/3/2020,Central,Kivell,Binder,126,4.99,628.74
+12/3/2020,East,Gill,Binder,278,4.99,1387.22
+01/28/2020,East,Sorvino,Pencil,164,0.99,162.35999999999999
+06/17/2021,West,Andrews,Binder,97,4.99,484.03000000000003
+02/14/2020,Central,Thompson,Desk,48,125,6000
+01/20/2021,Central,Parent,Pen Set,92,12.49,1149.08
+04/23/2021,West,Andrews,Pen,172,1.99,342.28
+03/1/2020,East,Parent,Desk,134,125,16750
+04/26/2020,West,Morgan,Desk,4,125,500
+10/30/2020,West,Sorvino,Binder,295,4.99,1472.05
+07/21/2020,East,Morgan,Pen,250,1.99,497.5
+11/16/2021,East,Morgan,Desk,124,125,15500
+09/5/2021,West,Gill,Binder,91,4.99,454.09000000000003
+02/2/2020,Central,Morgan,Desk,106,125,13250
+07/8/2020,Central,Parent,Binder,60,4.99,299.40000000000003
+01/30/2020,Central,Gill,Pencil,228,0.99,225.72
+01/3/2020,Central,Howard,Pen,267,1.99,531.33
+07/9/2021,West,Gill,Pencil,77,0.99,76.23
+01/14/2020,West,Gill,Binder,253,4.99,1262.47
+11/21/2020,West,Howard,Desk,297,125,37125
+12/25/2020,West,Thompson,Pencil,161,0.99,159.39
+01/15/2021,West,Jones,Pencil,24,0.99,23.759999999999998
+02/2/2020,West,Kivell,Pen Set,91,12.49,1136.59
+02/21/2021,West,Jones,Pen,89,1.99,177.10999999999999
+08/6/2021,West,Morgan,Pen,85,1.99,169.15
+09/26/2021,Central,Sorvino,Binder,200,4.99,998.0
+11/30/2021,Central,Andrews,Binder,15,4.99,74.85000000000001
+12/10/2021,East,Morgan,Pen,61,1.99,121.39
+12/9/2021,East,Parent,Pencil,164,0.99,162.35999999999999
+11/22/2021,East,Kivell,Pen,205,1.99,407.95
+08/24/2020,Central,Jones,Binder,112,4.99,558.88
+09/12/2020,East,Thompson,Pen Set,139,12.49,1736.1100000000001
+07/16/2021,East,Jones,Binder,249,4.99,1242.51
+06/27/2021,West,Andrews,Pencil,217,0.99,214.82999999999998
+05/8/2021,West,Parent,Pen,285,1.99,567.15
+05/30/2020,West,Jardine,Pen,87,1.99,173.13
+02/15/2020,East,Jones,Binder,43,4.99,214.57000000000002
+05/14/2021,West,Smith,Binder,128,4.99,638.72
+05/15/2020,Central,Thompson,Pen Set,257,12.49,3209.93
+07/30/2021,Central,Jardine,Binder,273,4.99,1362.27
+01/28/2021,West,Sorvino,Binder,265,4.99,1322.3500000000001
+05/31/2021,East,Morgan,Desk,296,125,37000
+06/28/2021,West,Andrews,Binder,51,4.99,254.49
+05/12/2020,East,Sorvino,Binder,213,4.99,1062.8700000000001
+05/14/2020,Central,Morgan,Pen Set,106,12.49,1323.94
+03/18/2021,Central,Gill,Pen,128,1.99,254.72
+09/22/2021,Central,Thompson,Pen,267,1.99,531.33
+07/8/2020,East,Howard,Pen,153,1.99,304.46999999999997
+06/29/2020,Central,Smith,Desk,30,125,3750
+03/28/2021,East,Sorvino,Pencil,78,0.99,77.22
+04/17/2020,East,Jardine,Pen,21,1.99,41.79
+09/10/2020,West,Andrews,Binder,192,4.99,958.08
+09/19/2020,West,Sorvino,Pen Set,78,12.49,974.22
+11/28/2021,West,Jardine,Desk,128,125,16000
+06/24/2021,West,Parent,Binder,240,4.99,1197.6000000000001
+12/10/2020,Central,Sorvino,Pen Set,7,12.49,87.43
+09/5/2020,West,Parent,Pen,192,1.99,382.08
+05/16/2021,West,Parent,Pen,83,1.99,165.17
+10/17/2020,West,Morgan,Pen Set,173,12.49,2160.77
+04/29/2020,East,Jardine,Pencil,111,0.99,109.89
+02/16/2021,East,Sorvino,Pencil,277,0.99,274.23
+05/30/2021,West,Parent,Binder,56,4.99,279.44
+01/18/2020,East,Smith,Pencil,89,0.99,88.11
+12/29/2021,East,Jones,Pencil,17,0.99,16.83
+03/3/2020,East,Morgan,Pen Set,111,12.49,1386.39
+02/16/2020,West,Jones,Pen Set,201,12.49,2510.4900000000002
+07/27/2021,West,Jones,Pen Set,160,12.49,1998.4
+01/11/2021,East,Kivell,Pencil,153,0.99,151.47
+12/24/2021,Central,Jones,Pen Set,65,12.49,811.85
+08/11/2020,Central,Smith,Pencil,115,0.99,113.85
+03/19/2021,Central,Andrews,Desk,174,125,21750
+07/15/2020,Central,Parent,Pencil,83,0.99,82.17
+03/22/2020,West,Kivell,Binder,115,4.99,573.85
+05/2/2020,East,Jardine,Pencil,128,0.99,126.72
+03/3/2020,Central,Parent,Binder,202,4.99,1007.98
+06/17/2020,Central,Sorvino,Binder,43,4.99,214.57000000000002
+08/3/2020,West,Thompson,Pencil,287,0.99,284.13
+09/26/2021,West,Sorvino,Pencil,216,0.99,213.84
+04/2/2021,Central,Jardine,Binder,164,4.99,818.36
+10/31/2020,West,Jardine,Pen Set,135,12.49,1686.15
+09/28/2021,Central,Kivell,Binder,114,4.99,568.86
+06/4/2021,West,Smith,Pen Set,296,12.49,3697.04
+03/10/2021,Central,Jardine,Binder,83,4.99,414.17
+09/5/2020,Central,Andrews,Pencil,264,0.99,261.36
+07/3/2020,West,Sorvino,Pencil,94,0.99,93.06
+11/29/2020,East,Andrews,Pen Set,134,12.49,1673.66
+11/10/2021,West,Smith,Pencil,119,0.99,117.81
+11/8/2020,East,Parent,Binder,194,4.99,968.0600000000001
+02/3/2021,East,Howard,Desk,300,125,37500
+06/24/2020,East,Kivell,Pen,154,1.99,306.46
+05/13/2020,West,Thompson,Pencil,72,0.99,71.28
+08/19/2021,West,Morgan,Desk,56,125,7000
+06/28/2020,Central,Jones,Binder,158,4.99,788.4200000000001
+03/18/2021,Central,Sorvino,Pen,271,1.99,539.29
+01/20/2020,Central,Smith,Pencil,157,0.99,155.43
+08/10/2020,West,Gill,Desk,214,125,26750
+11/13/2021,West,Jones,Pen,236,1.99,469.64
+09/3/2020,West,Kivell,Desk,292,125,36500
+11/12/2021,Central,Parent,Desk,164,125,20500
+06/18/2021,Central,Sorvino,Binder,174,4.99,868.26
+05/7/2021,West,Jones,Pen Set,131,12.49,1636.19
+01/16/2020,Central,Parent,Binder,140,4.99,698.6
+12/19/2020,East,Sorvino,Pencil,290,0.99,287.1
+02/10/2021,Central,Sorvino,Pen Set,5,12.49,62.45
+03/1/2021,Central,Howard,Pencil,85,0.99,84.15
+06/20/2020,West,Sorvino,Pencil,178,0.99,176.22
+03/20/2020,Central,Parent,Binder,73,4.99,364.27000000000004
+08/31/2020,Central,Parent,Pencil,157,0.99,155.43
+04/21/2021,West,Kivell,Pen Set,230,12.49,2872.7000000000003
+04/20/2020,East,Gill,Pen Set,49,12.49,612.01
+10/28/2020,West,Jones,Pencil,157,0.99,155.43
+05/25/2020,West,Jones,Desk,114,125,14250
+04/21/2021,Central,Jones,Pen,268,1.99,533.32
+10/20/2020,West,Morgan,Desk,232,125,29000
+06/25/2021,West,Thompson,Pen Set,220,12.49,2747.8
+06/28/2020,East,Morgan,Pen Set,111,12.49,1386.39
+10/9/2021,Central,Parent,Pen,98,1.99,195.02
+05/18/2020,East,Parent,Desk,196,125,24500
+02/9/2020,West,Gill,Binder,228,4.99,1137.72
+05/2/2020,East,Kivell,Pen,212,1.99,421.88
+02/18/2021,Central,Howard,Pencil,42,0.99,41.58
+10/28/2021,East,Jardine,Pen Set,124,12.49,1548.76
+12/27/2020,East,Kivell,Pencil,48,0.99,47.519999999999996
+04/4/2021,Central,Jones,Desk,171,125,21375
+09/1/2021,Central,Andrews,Desk,282,125,35250
+10/17/2021,East,Jones,Pen Set,113,12.49,1411.3700000000001
+09/15/2020,Central,Kivell,Binder,110,4.99,548.9
+07/21/2020,Central,Howard,Pencil,22,0.99,21.78
+05/1/2020,Central,Gill,Binder,268,4.99,1337.3200000000002
+10/27/2021,Central,Sorvino,Desk,80,125,10000
+10/6/2021,Central,Sorvino,Pencil,131,0.99,129.69
+11/8/2021,West,Gill,Pencil,54,0.99,53.46
+09/13/2021,Central,Morgan,Pen,112,1.99,222.88
+05/30/2020,West,Sorvino,Pen,53,1.99,105.47
+01/20/2020,East,Jones,Pen Set,175,12.49,2185.75
+05/13/2021,East,Kivell,Binder,63,4.99,314.37
+04/8/2021,Central,Sorvino,Pen Set,209,12.49,2610.41
+07/29/2020,Central,Jones,Desk,82,125,10250
+09/6/2020,Central,Sorvino,Binder,80,4.99,399.20000000000005
+07/10/2021,West,Morgan,Binder,183,4.99,913.1700000000001
+04/20/2021,West,Smith,Pen,176,1.99,350.24
+08/24/2020,Central,Morgan,Pen Set,220,12.49,2747.8
+04/5/2021,East,Sorvino,Pen,82,1.99,163.18
+08/13/2020,Central,Morgan,Pen,85,1.99,169.15
+04/3/2020,Central,Jardine,Pen,281,1.99,559.1899999999999
+05/11/2020,East,Thompson,Pen Set,242,12.49,3022.58
+12/4/2021,Central,Sorvino,Pencil,44,0.99,43.56
+01/28/2020,West,Kivell,Pen Set,126,12.49,1573.74
+09/14/2020,Central,Andrews,Pen,280,1.99,557.2
+01/17/2020,Central,Smith,Pen,81,1.99,161.19
+08/3/2020,West,Morgan,Pen Set,263,12.49,3284.87
+01/19/2021,East,Andrews,Binder,106,4.99,528.94
+06/14/2020,West,Smith,Binder,40,4.99,199.60000000000002
+09/17/2020,East,Smith,Desk,18,125,2250
+06/14/2021,Central,Parent,Pen Set,199,12.49,2485.51
+02/18/2020,East,Andrews,Desk,170,125,21250
+02/1/2021,West,Sorvino,Pencil,47,0.99,46.53
+02/2/2020,Central,Sorvino,Pencil,51,0.99,50.49
+04/13/2020,East,Howard,Pen Set,110,12.49,1373.9
+04/20/2021,Central,Thompson,Pencil,240,0.99,237.6
+11/25/2021,Central,Jardine,Desk,197,125,24625
+04/24/2021,East,Andrews,Pen Set,37,12.49,462.13
+03/19/2020,Central,Jardine,Desk,27,125,3375
+06/22/2021,East,Gill,Pencil,40,0.99,39.6
+09/22/2021,West,Smith,Desk,11,125,1375
+07/27/2020,West,Parent,Pencil,257,0.99,254.43
+11/1/2021,West,Jardine,Pen,191,1.99,380.09
+10/17/2020,East,Sorvino,Pen,239,1.99,475.61
+10/9/2021,West,Howard,Binder,124,4.99,618.76
+04/27/2020,West,Smith,Pencil,6,0.99,5.9399999999999995
+11/11/2020,Central,Smith,Pencil,141,0.99,139.59
+09/7/2020,Central,Howard,Pen Set,115,12.49,1436.3500000000001
+07/7/2020,West,Gill,Binder,150,4.99,748.5
+06/29/2020,East,Sorvino,Pencil,74,0.99,73.26
+07/14/2020,Central,Howard,Pencil,225,0.99,222.75
+09/11/2021,East,Jones,Binder,258,4.99,1287.42
+05/15/2021,Central,Jones,Pen,143,1.99,284.57
+06/28/2021,Central,Sorvino,Pencil,289,0.99,286.11
+07/3/2021,West,Jardine,Pen Set,289,12.49,3609.61
+04/15/2020,West,Jones,Pen,84,1.99,167.16
+12/12/2020,Central,Jardine,Pencil,32,0.99,31.68
+08/10/2021,West,Thompson,Pen,261,1.99,519.39
+11/30/2020,West,Howard,Pen,290,1.99,577.1
+12/24/2021,West,Thompson,Pencil,53,0.99,52.47
+05/4/2021,West,Smith,Pencil,142,0.99,140.58
+04/13/2020,East,Morgan,Pen Set,213,12.49,2660.37
+09/3/2021,East,Howard,Pen Set,16,12.49,199.84
+07/15/2021,Central,Jardine,Desk,179,125,22375
+07/19/2020,Central,Thompson,Binder,259,4.99,1292.41
+05/12/2020,Central,Kivell,Pen,60,1.99,119.4
+12/1/2021,West,Sorvino,Desk,262,125,32750
+05/20/2020,East,Kivell,Pen,283,1.99,563.17
+12/27/2021,West,Howard,Binder,81,4.99,404.19
+10/27/2021,West,Parent,Pen,276,1.99,549.24
+05/7/2021,East,Howard,Pen,45,1.99,89.55
+03/12/2020,West,Andrews,Pen,211,1.99,419.89
+01/28/2020,East,Morgan,Pen,237,1.99,471.63
