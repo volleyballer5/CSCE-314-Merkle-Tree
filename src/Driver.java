@@ -185,7 +185,7 @@ public class Driver {
 		
 		System.out.println("Constructing master database Merkle Tree.\n");
 		
-		MerkleTree updatedTree = new MerkleTree("officeSuppliesSalesUPDATED.csv");
+		MerkleTree updatedTree = new MerkleTree(updated);
 		updatedTree.build();
 		
 		System.out.println("Reading the machine's sales report.");
@@ -199,7 +199,7 @@ public class Driver {
 		
 		System.out.println("Constructing the machine's Merkle Tree.\n");
 		
-		MerkleTree machineTree = new MerkleTree("officeSuppliesSalesMACHINE.csv");
+		MerkleTree machineTree = new MerkleTree(machine);
 		machineTree.build();
 		
 		System.out.println("Checking if machine is up to date:");
